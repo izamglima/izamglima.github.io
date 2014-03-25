@@ -1,0 +1,23 @@
+body {
+	background: #FFF;
+	color: #000;
+	font: 12pt serif;
+}
+
+a:link, a:visited {
+	color: #333;
+	text-decoration: underline;
+}
+
+#foto {
+	display: none;
+}
+
+#pagina {
+	width: 100%;
+	margin: auto;
+}
+
+.icons {
+	display: none;
+}

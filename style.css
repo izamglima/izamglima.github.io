@@ -1,0 +1,98 @@
+.back {
+	background: url(noisy.png);
+	font-family: Genova, 'Lucinda Sans', Verdana;
+}
+
+#pagina {
+	width: auto;
+	background: #FFFFFF;
+	border: solid 1px #A4A4A4;
+	border-top-color: ##EFEFFB;
+	border-bottom-color: #A4A4A4 ;
+	padding: 10px 49px;
+	margin: 15px auto 70px;
+	position: relative;
+}
+
+
+#infos a {
+	text-decoration: none;
+	color: #0B615E;
+}
+
+#infos ul li{
+	display: inline;
+	color: #0B615E;
+	padding: 5px;
+	max-width:100%;
+	overflow: hidden;
+}
+
+#infos {
+	text-align: center;
+	background-color:#E6E6E6;
+	padding: 10px;
+	margin: 5px;
+	overflow: hidden;
+	border-radius: 3em;
+}
+
+#foto img {
+	border-radius: 50%;
+	max-width:100%;
+}
+
+h1 {
+	color: #151515;
+	font-family: Genova, 'Lucinda Sans', Verdana;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	max-width:100%;
+	overflow: hidden;
+}
+
+.icons {
+	vertical-align: middle;
+}
+
+body {
+	background-color: #F7F8E0;
+}
+
+.titles {
+	color: #414040;
+	font-family: Genova, 'Lucinda Sans', Verdana;
+}
+
+#content {
+	text-align: center;
+	margin: 10px;
+	padding: 15px;
+}
+
+#miolo {
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+}
+
+#left {
+	width: 45%;
+	float: left;
+}
+
+#right {
+	width: 45%;
+	float: right;
+}
+
+#footer {
+	padding: 15px;
+	margin: 5px;
+	text-align: center;
+}
+
+#left span {
+	text-decoration: bold;
+}
