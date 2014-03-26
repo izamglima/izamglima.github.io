@@ -3,7 +3,7 @@
 	font-family: Genova, 'Lucinda Sans', Verdana;
 }
 
-#pagina {
+#page {
 	width: auto;
 	background: #FFFFFF;
 	border: solid 1px #A4A4A4;
@@ -37,7 +37,7 @@
 	border-radius: 3em;
 }
 
-#foto {
+#photo {
 	border-radius: 50%;
 	max-width:100%;
 }
