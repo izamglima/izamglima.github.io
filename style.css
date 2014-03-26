@@ -30,14 +30,14 @@
 
 #infos {
 	text-align: center;
-	background-color:#E6E6E6;
+	background-color:#F2F2F2;
 	padding: 10px;
 	margin: 5px;
 	overflow: hidden;
 	border-radius: 3em;
 }
 
-#foto img {
+#foto {
 	border-radius: 50%;
 	max-width:100%;
 }
@@ -70,7 +70,7 @@ body {
 	padding: 15px;
 }
 
-#miolo {
+#knowledge {
 	display: inline-block;
 	text-align: center;
 	margin: 5px;
@@ -87,12 +87,12 @@ body {
 	float: right;
 }
 
-#footer {
+.languages {
 	padding: 15px;
 	margin: 5px;
 	text-align: center;
 }
 
-#left span {
-	text-decoration: bold;
+span {
+	font-style: oblique;
 }
