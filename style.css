@@ -4,7 +4,7 @@
 }
 
 #page {
-	width: auto;
+	width: 80%;
 	background: #FFFFFF;
 	border: solid 1px #A4A4A4;
 	border-top-color: ##EFEFFB;
@@ -70,27 +70,27 @@ body {
 	padding: 15px;
 }
 
-#knowledge {
-	display: inline-block;
+#left {
+	width: 45%;
 	text-align: center;
 	margin: 5px;
 	padding: 10px;
-}
-
-#left {
-	width: 45%;
-	float: left;
+	display: inline-block;
 }
 
 #right {
 	width: 45%;
-	float: right;
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+	display: inline-block;
 }
 
-.languages {
-	padding: 15px;
+#languages {
+	padding: 10px;
 	margin: 5px;
 	text-align: center;
+	clear: both;
 }
 
 span {
