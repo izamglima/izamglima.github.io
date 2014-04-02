@@ -13,7 +13,7 @@ a:link, a:visited {
 	text-decoration: underline;
 }
 
-#foto {
+#photo {
 	display: none;
 }
 
@@ -21,7 +21,18 @@ a:link, a:visited {
 	display: none;
 }
 
+.titles {
+	margin-top: 10px;
+}
+
 #infos, #content, #knowledge {
-	margin: 5px;
+	margin: px;
 	padding: 10px;
+}
+
+#left, #right {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin: 5px 0 5px 0;
 }

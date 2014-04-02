@@ -70,7 +70,7 @@ body {
 	padding: 15px;
 }
 
-#left {
+#knowledge {
 	width: 45%;
 	text-align: center;
 	margin: 5px;
@@ -78,7 +78,7 @@ body {
 	display: inline-block;
 }
 
-#right {
+#profissional {
 	width: 45%;
 	text-align: center;
 	margin: 5px;
