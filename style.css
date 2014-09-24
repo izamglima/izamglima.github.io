@@ -1,98 +1,59 @@
-.back {
-	background: url(noisy.png);
-	font-family: Genova, 'Lucinda Sans', Verdana;
-}
+* { margin: 0px;}
 
-#page {
-	width: 80%;
-	background: #FFFFFF;
-	border: solid 1px #A4A4A4;
-	border-top-color: ##EFEFFB;
-	border-bottom-color: #A4A4A4 ;
-	padding: 10px 49px;
-	margin: 15px auto 70px;
-	position: relative;
-}
+.no-list { list-style: none; }
 
+.clear { clear: both;}
 
-#infos a {
-	text-decoration: none;
-	color: #0B615E;
-}
+.wrapper { width: 960px; margin: 0 auto; }
 
-#infos ul li{
-	display: inline;
-	color: #0B615E;
-	padding: 5px;
-	max-width:100%;
-	overflow: hidden;
-}
+.block-top { height: 95px; background-color: #fff;}
 
-#infos {
-	text-align: center;
-	background-color:#F2F2F2;
-	padding: 10px;
-	margin: 5px;
-	overflow: hidden;
-	border-radius: 3em;
-}
+.block-top h1 { font-family: 'Libre Baskerville', serif; font-size: 40px; color: rgb(96, 96, 96); }
 
-#photo {
-	border-radius: 50%;
-	max-width:100%;
-}
+.block-top p { font-family: 'Indie Flower', cursive; font-weight: bold; font-size: 17px; margin-left: 50px; color: rgb(96, 96, 96)}
 
-h1 {
-	color: #151515;
-	font-family: Genova, 'Lucinda Sans', Verdana;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	max-width:100%;
-	overflow: hidden;
-}
+.logo { float: left; padding: 7px 5px; margin-right: 50px;}
 
-.icons {
-	vertical-align: middle;
-}
+.no-list li { float: left; margin: 30px 30px 5px;}
 
-body {
-	background-color: #F7F8E0;
-}
+.no-list li a { font-family: 'Libre Baskerville', serif; text-decoration: none; color:rgb(195, 191, 190); }
 
-.titles {
-	color: #414040;
-	font-family: Genova, 'Lucinda Sans', Verdana;
-}
+.no-list li a:hover { color: #FF3725; }
 
-#content {
-	text-align: center;
-	margin: 10px;
-	padding: 15px;
-}
+.content { background-color: #FAF2FF; width: 100%; height: 675px;}
 
-#knowledge {
-	width: 45%;
-	text-align: center;
-	margin: 5px;
-	padding: 10px;
-	display: inline-block;
-}
+.content .photo { width: 440px; height: 600px; float: left;}
 
-#profissional {
-	width: 45%;
-	text-align: center;
-	margin: 5px;
-	padding: 10px;
-	display: inline-block;
-}
+.content .photo img { border-radius: 50%; margin-top: 42px;}
 
-#languages {
-	padding: 10px;
-	margin: 5px;
-	text-align: center;
-	clear: both;
-}
+.text-side { float: right; width: 500px;}
 
-span {
-	font-style: oblique;
-}
+.text-side .welcome-block { margin-top: 38px;}
+
+.text-side h3 span { font-family: 'Libre Baskerville', serif; line-height: 1.2em; font-size: 55px; color: rgb(96, 96, 96); }
+
+.text-side h4 span { font-family: 'Libre Baskerville', serif; line-height: 1.5em; font-size: 35px; color: rgb(96, 96, 96);}
+
+.text-side section { margin-top: 40px; height: 200px;}
+
+.text-side section .round { width: 142px; height: 142px; border-radius: 50%; float: left; margin: 10px 7px; cursor: pointer;}
+
+.text-side section .round a { display: block; width: 140px; height: 140px; text-decoration: none;}
+
+.text-side section a span { margin: 60px 21px; display: inline-block; white-space: nowrap; text-transform: uppercase; color: rgb(255, 255, 255); transition: color 0.4s ease 0s; -webkit-transition: color 0.4s ease 0s;}
+
+.text-side section .green { background-color: #99E8BD; }
+
+.text-side section .blue { background-color: #AACAFF;}
+
+.text-side section .red { background-color: #FF736B; }
+
+.text-side .description { margin-top: 30px; }
+
+.text-side .description p { font-family: 'Libre Baskerville', serif; color: rgb(96, 96, 96); }
+
+.text-side .description .triangle-right { width: 0; height: 0; border-top: 20px solid transparent; border-left: 42px solid red; border-bottom: 20px solid transparent;}
+
+.style-separator { background-image: url(7-floral.jpg); width: 100%; height: 22px; -moz-box-shadow: inset 0 0 13px #000000; -webkit-box-shadow: inset 0 0 13px #000000; box-shadow: inset 0 0 13px #000000;}
+
+footer { height: 85px; background-color: #E85E47;}
