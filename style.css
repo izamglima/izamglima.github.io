@@ -20,15 +20,15 @@
 
 .no-list li a:hover { color: #FF3725; }
 
-.content { background-color: #FAF2FF; width: 100%; height: 675px;}
+.content { background-color: #FAF2FF; width: 100%;}
 
-.content .photo { width: 440px; height: 600px; float: left;}
+h3, h4 { display: inline-block; margin-top: 22px;}
 
-.content .photo img { border-radius: 50%; margin-top: 42px;}
+h4 { text-indent: 12px; }
 
-.text-side { float: right; width: 500px;}
+.text-side .welcome-block {text-align: center}
 
-.text-side .welcome-block { margin-top: 38px;}
+.text-side { width: 960px;}
 
 .text-side h3 span { font-family: 'Libre Baskerville', serif; line-height: 1.2em; font-size: 55px; color: rgb(96, 96, 96); }
 
@@ -36,21 +36,23 @@
 
 .text-side section { margin-top: 40px; height: 200px;}
 
-.text-side section .round { width: 142px; height: 142px; border-radius: 50%; float: left; margin: 10px 7px; cursor: pointer;}
+.text-side .round { width: 142px; height: 142px; border-radius: 50%; float: left; margin: 10px 7px; cursor: pointer;}
 
-.text-side section .round a { display: block; width: 140px; height: 140px; text-decoration: none;}
+.text-side .round:hover { opacity: 0.8; }
 
-.text-side section a span { margin: 60px 21px; display: inline-block; white-space: nowrap; text-transform: uppercase; color: rgb(255, 255, 255); transition: color 0.4s ease 0s; -webkit-transition: color 0.4s ease 0s;}
+.text-side .round a { display: block; width: 140px; height: 140px; text-decoration: none;}
 
-.text-side section .green { background-color: #99E8BD; }
+.text-side  a span { margin: 60px 21px; display: inline-block; white-space: nowrap; text-transform: uppercase; color: rgb(255, 255, 255); transition: color 0.4s ease 0s; -webkit-transition: color 0.4s ease 0s;}
+
+.text-side .green { background-color: #99E8BD; }
 
 .text-side section .blue { background-color: #AACAFF;}
 
 .text-side section .red { background-color: #FF736B; }
 
-.text-side .description { margin-top: 30px; }
+.text-side .description { margin-top: 30px; width: 575px; margin-left: auto; margin-right: auto; height: 165px;}
 
-.text-side .description p { font-family: 'Libre Baskerville', serif; color: rgb(96, 96, 96); }
+.text-side .description p { font-family: 'Libre Baskerville', serif; color: rgb(96, 96, 96); overflow: hidden; padding-top: 20px;}
 
 .text-side .description .triangle-right { width: 0; height: 0; border-top: 20px solid transparent; border-left: 42px solid red; border-bottom: 20px solid transparent;}
 
