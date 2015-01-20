@@ -183,9 +183,15 @@ img:last-of-type {
 	body .slide .title {
 		width: 100%;
 	}
+	.hiden {
+		display: none;
+	}
 }
 @media (max-width: 768px) {
 	body .slide .title {
 		width: 100%;
+	}
+	.hiden {
+		display: none;
 	}
 }
