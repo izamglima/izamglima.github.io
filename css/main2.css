@@ -179,3 +179,13 @@ img:last-of-type {
 #print h1 {
 	font-family: 'Noto Serif', serif;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+	body .slide .title {
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	body .slide .title {
+		width: 100%;
+	}
+}
