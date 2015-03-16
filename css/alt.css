@@ -62,7 +62,7 @@ section {
   height: 25px;
 }
 .icons .cel {
-  background: url(../img/mobile.png);
+  background: url(../imgs/mobile.png);
   width: 58px;
   height: 63px;
   display: block;
@@ -70,14 +70,14 @@ section {
 }
 
 .icons .mail {
-  background: url(../img/email.png);
+  background: url(../imgs/email.png);
   width: 67px;
   height: 55px;
   display: block;
 }
 
 .icons .twt {
-  background-image: url(../img/twitterr.png);
+  background-image: url(../imgs/twitterr.png);
   width: 60px;
   height: 57px;
   display: block;
