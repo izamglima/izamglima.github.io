@@ -17,8 +17,9 @@ body {
   position: absolute;
   top: 16px;
   left: 292px;
-  height: 160%;
+  height: 175%;
   padding: 150px 40px 0 40px;
+  margin-bottom: 16px;
 }
 .icone-bloco {
   width: 20px;
