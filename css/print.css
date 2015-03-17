@@ -2,7 +2,7 @@
   div.container_ {
     width: 100%;
   }
-  div.bk, div.icone-bloco, div.ribbon_round, div.skew, div.vertical-bloco{
+  div.bk, div.icone-bloco, div.ribbon_round, div.skew, div.vertical-bloco, div.icons{
     display: none;
   }
   div.main {
@@ -14,5 +14,13 @@
   div.conteudo {
     width: 100%;
     position: inherit;
+    padding: 20px;
+  }
+  a.espaco-icons {
+    display: inline;
+    padding: 10px;
+  }
+  div.descricao {
+    vertical-align: inherit;
   }
 }
