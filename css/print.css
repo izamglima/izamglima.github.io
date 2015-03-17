@@ -14,7 +14,7 @@
   div.conteudo {
     width: 100%;
     position: inherit;
-    padding: 20px;
+    padding: 20px !important;
   }
   a.espaco-icons {
     display: inline;
@@ -25,5 +25,8 @@
   }
   div.container_ {
     margin: 5px auto;
+  }
+  ul li a {
+    font-weight: 400;
   }
 }
