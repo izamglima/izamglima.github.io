@@ -49,12 +49,13 @@ h3 {
   display: inline-block;
   margin: 0;
   font-family: 'Alice', serif !important;
-  font-size: 1.3em;
   padding-left: 7px;
-  color: #1B3C59;
 }
 section {
   padding: 10px;
+}
+section h3 {
+  color: #1B3C59;
 }
 .icons {
   display: inline-block;

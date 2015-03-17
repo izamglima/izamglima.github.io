@@ -1,0 +1,18 @@
+@media print {
+  div.container_ {
+    width: 100%;
+  }
+  div.bk, div.icone-bloco, div.ribbon_round, div.skew, div.vertical-bloco{
+    display: none;
+  }
+  div.main {
+    background-color: #fff;
+  }
+  .main h1 {
+    color: #1B3C59;
+  }
+  div.conteudo {
+    width: 100%;
+    position: inherit;
+  }
+}
