@@ -23,4 +23,7 @@
   div.descricao {
     vertical-align: inherit;
   }
+  div.container_ {
+    margin: 5px auto;
+  }
 }
