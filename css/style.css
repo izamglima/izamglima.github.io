@@ -9,6 +9,7 @@ h1 {	font-family: 'Arvo', serif !important; letter-spacing: 3px; color: rgb(127,
 h4 {font-family: 'Slabo 27px', serif !important; letter-spacing: 3px; color:rgba(170, 170, 170, 0.84) !important;}
 h3 {font-family:  'Slabo 27px', serif !important; font-size: 20px !important;letter-spacing: 2px; color: rgb(168, 168, 168) !important;}
 p {font-family: 'Raleway', sans-serif;}
+section:first-of-type {clear:both;}
 
 @media all and (min-width: 992px) {
 	.left{
