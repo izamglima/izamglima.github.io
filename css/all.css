@@ -648,7 +648,8 @@ header {
     text-align: center;
     letter-spacing: 0.05em;
     color: white;
-    line-height: 1; }
+    line-height: 1;
+	color: #fff;	}
 
 @media (max-width: 640px) {
   header {
