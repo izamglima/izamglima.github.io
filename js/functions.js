@@ -1,5 +1,5 @@
 $(function() {
-	smoothScroll(300);
+	smoothScroll(1000);
 	workBelt();
 	workLoad();
 	clientStuff();
@@ -417,3 +417,27 @@ function clientStuff() {
 		});
 	};
 }(jQuery || $)); // jQuery or jQuery-like library, such as Zepto
+// Check if elements should be animated
+$(document).ready(function(){	
+
+
+	if ($('.animate').length) {
+		animate($(window).scrollTop());
+	}
+});
+
+function animate(winST) {
+	$('.animate').each(function(){
+		if (winST + ($(window).height() - 100) > $(this).offset().top) {
+			$(this).addClass('animated');
+		}
+	});
+}
+$(document).on('scroll', function(){
+	var winST = $(window).scrollTop();
+
+	// Check if elements should be animated
+	if ($('.animate').length) {
+		animate(winST);
+	}
+});
