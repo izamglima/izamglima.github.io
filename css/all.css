@@ -811,7 +811,8 @@ footer {
     .skill-lockup .skill-unit {
       width: 220px; } }
 .section-work {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: none;}
 
 /* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
 .noscript {
@@ -1276,7 +1277,7 @@ form {
     font-size: 18px; }
 
 .alt-section.section-contact {
-  background: #fff;
+   background: #e5eaee;
 }
 .animate {
   -webkit-transition: 0.5s;
