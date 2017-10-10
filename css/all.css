@@ -597,7 +597,7 @@ header, footer {
 
 header {
   background-position: 30px 20px, 50% 50%;
-  background-image: url(../img/logo.svg), url(../img/hero-bg.jpg);
+  background-image: url(../img/logo.png), url(../img/hero-bg.jpg);
   padding-bottom: 50px; }
   header .logo {
     height: 50px;
@@ -612,9 +612,9 @@ header {
     header nav a {
       display: inline-block;
       margin-left: 20px;
-      color: rgba(0, 0, 0, 0.7); }
-      header nav a:hover {
-        color: black; }
+      color: #fff;
+      font-weight: bolder; }
+      
   header h1 {
     text-align: center;
     font-size: 72px;
@@ -647,7 +647,7 @@ header {
     header h1 {
       padding-top: 0px; } }
 footer {
-  background-image: url(../img/logo.svg), url(../img/hero-bg.jpg); }
+  background-image: url(../img/logo.png), url(../img/hero-bg.jpg); }
   footer .lockup {
     padding: 50px 30px; }
     footer .lockup:after {
@@ -656,18 +656,15 @@ footer {
       clear: both; }
     footer .lockup .content-wrap {
       float: left;
-      margin-left: 80px; }
-      footer .lockup .content-wrap .copyright {
-        margin: 0;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.4); }
+      margin-left: 80px;
+      margin-top: 15px; }
+
       footer .lockup .content-wrap a {
-        color: rgba(0, 0, 0, 0.5);
+        color: #fff;
         display: inline-block;
-        margin-right: 30px; }
-        footer .lockup .content-wrap a:hover {
-          color: rgba(0, 0, 0, 0.7); }
+        margin-right: 30px;
+        font-weight: bolder; }
+        
 
 .face-lockup {
   max-width: 780px;
@@ -812,7 +809,7 @@ footer {
       width: 220px; } }
 .section-work {
   overflow-x: hidden;
-  display: none;}
+  }
 
 /* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
 .noscript {
@@ -922,11 +919,11 @@ footer {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      background: rgba(201, 144, 101, 0.9);
+      background: rgba(0, 150, 136, 0.51);
       text-align: center; }
       .thumb-container label .thumb-overlay strong {
         display: block;
-        padding: 0 9%;
+        
         color: white;
         font-weight: 300;
         font-size: 24px;
@@ -1277,7 +1274,7 @@ form {
     font-size: 18px; }
 
 .alt-section.section-contact {
-   background: #e5eaee;
+   background: #ffffff;
 }
 .animate {
   -webkit-transition: 0.5s;
@@ -1353,4 +1350,9 @@ form {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+
+.parent-row {
+  width: 100%;
+  display: block;
 }
