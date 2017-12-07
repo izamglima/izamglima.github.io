@@ -731,7 +731,7 @@ footer {
 }
 header {
     background-position: 30px 20px, 50% 50%;
-    background-image: url(../img/logo.png), url(../img/hero-bg.jpeg);
+    background-image: url(../img/logo.png), url(../img/hero-bg.jpeg); 
     padding-bottom: 50px;
 }
 header .logo {
