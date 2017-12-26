@@ -1,7 +1,7 @@
 $(function() {
 	smoothScroll(1000);
 	workBelt();
-	workLoad();
+	//workLoad();
 	clientStuff();
 });
 
