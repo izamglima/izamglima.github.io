@@ -416,11 +416,34 @@ footer .lockup .content-wrap a {
 .blurb.small {
   font-size: 18px;
 }
-.tec {
-  width: 90%;
-  margin: 0 auto;
+#tec {
+  background-image: url('../img/black-thread-light.png');
 }
-
+.side-infos {
+  display: inline-block;
+  width: 49%;
+  margin-top: 45px;
+}
+img.side-infos {
+  padding-right: 5px;
+}
+div.side-infos{
+  font-size: 16px;
+  text-align: left;
+}
+.side-infos h4 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  color: #c99065;
+}
+.side-infos p {
+  font-size: 15px;
+  line-height: 33px;
+  color: #666;
+}
+#side-projects {
+  max-width: 675px;
+}
 
 @media screen and (max-width: 541px) {
     .skill-lockup {
@@ -432,6 +455,7 @@ footer .lockup .content-wrap a {
 }
 .section-contact {
     text-align: center;
+    border-top: 3px dotted #e1e5e9;
 }
 .social-links {
     max-width: 700px;
