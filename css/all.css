@@ -275,6 +275,12 @@ header .kicker {
     header h1 {
         padding-top: 0px;
     }
+    .hobbies {
+      font-size: 13px;
+    }
+    .blurb .side-infos {
+      width: 95%;
+    }
 }
 footer {
     background-image: url(../img/logo.png), url(../img/hero-bg.jpeg);
