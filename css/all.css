@@ -160,10 +160,10 @@ h3 {
 .heart:after {
  position: absolute;
  content: "";
- left: 15px;
+ left: 11px;
  top: 0;
- width: 15px;
- height: 25px;
+ width: 12px;
+ height: 22px;
  background: #c99065;
  -moz-border-radius: 50px 50px 0 0;
  border-radius: 50px 50px 0 0;
