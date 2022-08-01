@@ -1,9 +1,9 @@
 const Projects = () => {
   return (
-    <div>
+    <main className="main">
       <h1>Little Projects</h1>
       <p>lalala</p>
-    </div>
+    </main>
   )
 }
 
