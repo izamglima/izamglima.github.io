@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <div>
+    <main className="main">
       <div className="container-404">
-        <div className="container-404__first-number">
+        <div className="container-404__number">
           <div className="container-404__column">
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -29,7 +29,7 @@ const NotFound = () => {
           </div>
         </div>
         
-        <div className="container-404__second-number">
+        <div className="container-404__number">
           <div className="container-404__column">
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -41,17 +41,14 @@ const NotFound = () => {
             <span>&#10006;</span>
           </div>
           <div className="container-404__0">
-            <span>&#10006;</span>
-            <span>&#10006;</span>
-            <span>&#10006;</span>
-            <span>&#10006;</span>
-            
-            <div>
-              <span>&#10006;</span>
-              <span>&#10006;</span>
-              <span>&#10006;</span>
-              <span>&#10006;</span>
-            </div>
+              <span className="align-start">&#10006;</span>
+              <span className="align-start">&#10006;</span>
+              <span className="align-start">&#10006;</span>
+              <span className="align-start">&#10006;</span>
+              <span className="align-end">&#10006;</span>
+              <span className="align-end">&#10006;</span>
+              <span className="align-end">&#10006;</span>
+              <span className="align-end">&#10006;</span>
           </div>
           <div className="container-404__column">
             <span>&#10006;</span>
@@ -65,7 +62,7 @@ const NotFound = () => {
           </div>
         </div>
 
-        <div className="container-404__third-number">
+        <div className="container-404__number">
           <div className="container-404__column">
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -94,7 +91,7 @@ const NotFound = () => {
       <h2>This page cannot be found.</h2>
       
       <p>Go back to the <Link href="/"><a>Home</a></Link></p>
-    </div>
+    </main>
   )
 }
 

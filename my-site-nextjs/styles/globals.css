@@ -47,19 +47,18 @@ a {
 
 .footer {
   grid-area: footer;
+  background-color: burlywood;
 }
 
 .container-404 {
   display: flex;
   justify-content: center;
-  font-size: larger;
+  font-size: 1.5rem;
   background: linear-gradient(rgb(251, 124, 124), rgb(250, 206, 123), rgb(254, 254, 126), rgb(126, 252, 126), rgb(126, 126, 250), rgb(193, 115, 248), rgb(249, 159, 249));
   padding: 2rem;
 }
 
-.container-404__first-number,
-.container-404__second-number,
-.container-404__third-number {
+.container-404__number {
   display: flex;
   margin: 1rem 1rem 0 1rem;
 }
@@ -74,11 +73,27 @@ a {
   align-items: center;
 }
 
-.container-404 span {
+.container-404__0 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container-404__0 .align-start {
+  align-self: start;
+}
+
+.container-404__0 .align-end {
+  align-self: end;
+}
+
+.container-404 span,
+.container-404__0 div span {
   cursor: pointer;
 }
 
-.container-404 span:hover {
+.container-404 span:hover, 
+.container-404__0 div span:hover {
   animation-name: spin;
   animation-duration: 500ms;
   animation-iteration-count: infinite;
