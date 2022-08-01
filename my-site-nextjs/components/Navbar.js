@@ -3,12 +3,20 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav>
-      <h1>izamglima</h1>
+    <nav className="navbar">
+      <div className="navbar__title">
+        <Link href="/">
+          <a>
+            <h1>izamglima</h1>
+          </a>
+        </Link>
+      </div>
       {/* <Image src="/path.png" width={100} height={77} /> */}
-      <Link href="/">Home</Link>
-      <Link href="/about"><a>About</a></Link>
-      <Link href="/projects"><a>Little projects</a></Link>
+      <div className="navbar__links">
+        <Link href="/"><a className="navbar__links--link">Home</a></Link>
+        <Link href="/about"><a className="navbar__links--link">About</a></Link>
+        <Link href="/projects"><a className="navbar__links--link">Little projects</a></Link>
+      </div>
     </nav>
   )
 }
