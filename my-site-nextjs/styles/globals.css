@@ -16,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #__next {
   display: grid;
   grid-template-rows: 3.5rem auto fit-content(4rem);

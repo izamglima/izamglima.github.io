@@ -3,6 +3,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <main className="main">
+      <h1 className="text-center">Ooops...</h1>
       <div className="container-404">
         <div className="container-404__number">
           <div className="container-404__number--column">
@@ -87,10 +88,8 @@ const NotFound = () => {
           </div>
         </div>
       </div>
-      <h1>Ooops...</h1>
-      <h2>This page cannot be found.</h2>
-      
-      <p>Go back to the <Link href="/"><a>Home</a></Link></p>
+      <h2 className="text-center">This page cannot be found.</h2>  
+      <p className="text-center">Go back to the <Link href="/"><a className="link">Home</a></Link></p>
     </main>
   )
 }
