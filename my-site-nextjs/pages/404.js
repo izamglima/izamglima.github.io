@@ -5,19 +5,19 @@ const NotFound = () => {
     <main className="main">
       <div className="container-404">
         <div className="container-404__number">
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__row">
+          <div className="container-404__number--row">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -30,7 +30,7 @@ const NotFound = () => {
         </div>
         
         <div className="container-404__number">
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -50,7 +50,7 @@ const NotFound = () => {
               <span className="align-end">&#10006;</span>
               <span className="align-end">&#10006;</span>
           </div>
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -63,19 +63,19 @@ const NotFound = () => {
         </div>
 
         <div className="container-404__number">
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__row">
+          <div className="container-404__number--row">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__column">
+          <div className="container-404__number--column">
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
