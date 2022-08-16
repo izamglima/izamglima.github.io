@@ -4,14 +4,18 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="navbar">
+      {/* <Image src="/path.png" width={100} height={77} /> */}
+      <div>
+        <span>icon nightmode</span>
+        <span>icon sounds</span>
+      </div>
       <div className="navbar__title">
         <Link href="/">
           <a>
-            <h1>izamglima</h1>
+            <h1>izamglima - frontend dev</h1>
           </a>
         </Link>
       </div>
-      {/* <Image src="/path.png" width={100} height={77} /> */}
       <div className="navbar__links">
         <Link href="/"><a className="navbar__links--link">Home</a></Link>
         <Link href="/about"><a className="navbar__links--link">About</a></Link>

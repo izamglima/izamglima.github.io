@@ -1,9 +1,17 @@
+import Head from 'next/head'
+
 const About = () => {
   return (
-    <main className="main">
-      <h1>About</h1>
-      <p>lalala</p>
-    </main>
+    <>
+      <Head>
+        <title>izamglima | About</title>
+      </Head>
+      <main className="main">
+        <h1>About</h1>
+        <p>lalala</p>
+      </main>
+    </>
+    
   )
 }
 

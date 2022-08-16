@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
 import styles from '../styles/Home.module.css'
+import SectionsHome from "../components/SectionsHome"
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       </Head>
       <main className='main'>
         <h1 className={styles.title}>homepage</h1>
-        <p>some text... </p>
-        <Link href="/projects"><a>Little projects</a></Link>
+        <SectionsHome/>
+        {/* <Link href="/projects"><a>Little projects</a></Link> */}
       </main>
     </>
   )

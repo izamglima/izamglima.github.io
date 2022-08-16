@@ -38,7 +38,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
   background-color: antiquewhite;
   grid-area: header;
   width: 100%;
@@ -49,9 +48,19 @@ a {
   cursor: pointer;
 }
 
+.navbar__links--link {
+  margin-left: 1rem;
+}
+
 .footer {
   grid-area: footer;
   background-color: burlywood;
+}
+
+.navbar, 
+.main, 
+.footer {
+  padding: 0 1rem;
 }
 
 .container-404 {
