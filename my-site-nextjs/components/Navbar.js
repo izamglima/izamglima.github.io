@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* <Image src="/path.png" width={100} height={77} /> */}
-      <div>
-        <span>icon nightmode</span>
-        <span>icon sounds</span>
+      <div className="navbar__icons">
+        <span className="navbar__icons--icon">icon nightmode</span>
+        <span className="navbar__icons--icon">icon sounds</span>
       </div>
       <div className="navbar__title">
         <Link href="/">

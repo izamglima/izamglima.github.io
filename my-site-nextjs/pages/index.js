@@ -10,8 +10,7 @@ export default function Home() {
         <title>izamglima | Home</title>
         <meta name='keywords' content='Portifolio'/>
       </Head>
-      <main className='main'>
-        <h1 className={styles.title}>homepage</h1>
+      <main className={styles.main}>
         <SectionsHome/>
         {/* <Link href="/projects"><a>Little projects</a></Link> */}
       </main>

@@ -1,24 +1,25 @@
 import Link from "next/link";
+import styles from '../styles/404.module.css'
 
 const NotFound = () => {
   return (
     <main className="main">
       <h1 className="text-center">Ooops...</h1>
-      <div className="container-404">
-        <div className="container-404__number">
-          <div className="container-404__number--column">
+      <div className={styles['not-found']}>
+        <div className={styles['not-found__number']}>
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__number--row">
+          <div className={styles['not-found__number--row']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__number--column">
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -30,8 +31,8 @@ const NotFound = () => {
           </div>
         </div>
         
-        <div className="container-404__number">
-          <div className="container-404__number--column">
+        <div className={styles['not-found__number']}>
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -41,17 +42,17 @@ const NotFound = () => {
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__0">
-              <span className="align-start">&#10006;</span>
-              <span className="align-start">&#10006;</span>
-              <span className="align-start">&#10006;</span>
-              <span className="align-start">&#10006;</span>
-              <span className="align-end">&#10006;</span>
-              <span className="align-end">&#10006;</span>
-              <span className="align-end">&#10006;</span>
-              <span className="align-end">&#10006;</span>
+          <div className={styles['not-found__0']}>
+              <span className={styles['align-start']}>&#10006;</span>
+              <span className={styles['align-start']}>&#10006;</span>
+              <span className={styles['align-start']}>&#10006;</span>
+              <span className={styles['align-start']}>&#10006;</span>
+              <span className={styles['align-end']}>&#10006;</span>
+              <span className={styles['align-end']}>&#10006;</span>
+              <span className={styles['align-end']}>&#10006;</span>
+              <span className={styles['align-end']}>&#10006;</span>
           </div>
-          <div className="container-404__number--column">
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
@@ -63,20 +64,20 @@ const NotFound = () => {
           </div>
         </div>
 
-        <div className="container-404__number">
-          <div className="container-404__number--column">
+        <div className={styles['not-found__number']}>
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__number--row">
+          <div className={styles['not-found__number--row']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
           </div>
-          <div className="container-404__number--column">
+          <div className={styles['not-found__number--column']}>
             <span>&#10006;</span>
             <span>&#10006;</span>
             <span>&#10006;</span>
