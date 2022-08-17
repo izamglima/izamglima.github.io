@@ -1,5 +1,8 @@
+import useSound from 'use-sound';
+
 const DarkMode = () => {
-  
+  const [play] = useSound('/sounds/light.mp3');
+
   const toggleTheme = (e) => {
     if (e.target.checked) {
       setDark();
@@ -24,6 +27,7 @@ const DarkMode = () => {
           type="checkbox"
           id="checkbox"
           onChange={toggleTheme}
+          onClick={play}
         />
         <div className="slider"></div>
       </label>
