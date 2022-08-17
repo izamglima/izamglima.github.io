@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>izamglima | Home</title>
+        <title>iza.m.g.lima | Home</title>
         <meta name='keywords' content='Portifolio'/>
       </Head>
       <main className={styles.main}>

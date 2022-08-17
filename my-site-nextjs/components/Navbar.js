@@ -8,12 +8,11 @@ const Navbar = () => {
       {/* <Image src="/path.png" width={100} height={77} /> */}
       <div className="navbar__icons">
         <DarkMode/>
-        <span className="navbar__icons--icon">icon sounds</span>
       </div>
       <div className="navbar__title">
         <Link href="/">
           <a>
-            <h1>izamglima - frontend dev</h1>
+            <h1>iza.m.g.lima - frontend dev</h1>
           </a>
         </Link>
       </div>

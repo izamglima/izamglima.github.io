@@ -127,6 +127,12 @@ a {
   cursor: pointer;
 }
 
+.navbar__title h1 {
+  font-family: 'Just Me Again Down Here', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
 .navbar__links--link {
   margin-left: 1rem;
 }
@@ -142,4 +148,9 @@ a {
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
+}
+
+a, p {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.1rem;
 }
