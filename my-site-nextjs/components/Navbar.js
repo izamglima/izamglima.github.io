@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       {/* <Image src="/path.png" width={100} height={77} /> */}
       <div className="navbar__icons">
-        <span className="navbar__icons--icon">icon nightmode</span>
+        <DarkMode/>
         <span className="navbar__icons--icon">icon sounds</span>
       </div>
       <div className="navbar__title">
