@@ -1,10 +1,11 @@
 import styles from '../styles/Home.module.css'
+import Hero from './Hero';
 
 const SectionsHome = () => {
   return (
     <>
       <section className={styles.main__parallax}>
-        <p className="text-center">1</p>
+        <Hero />
       </section>
       <section className={styles.main__about}>
         <p className="text-center">2</p>

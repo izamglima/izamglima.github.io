@@ -10,7 +10,7 @@ export default function Home() {
         <title>iza.m.g.lima | Home</title>
         <meta name='keywords' content='Portifolio'/>
       </Head>
-      <main className={styles.main}>
+      <main className={styles.main} id="main">
         <SectionsHome/>
         {/* <Link href="/projects"><a>Little projects</a></Link> */}
       </main>

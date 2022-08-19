@@ -12,9 +12,23 @@
   --link-color: cornflowerblue;
 }
 
+:root {
+  --dark-orange: #fc7d48;
+  --light-orange: #ff9c47;
+  --carrot: #ed4133;
+  --peach: #fdd7c0;
+  --lipstick: #c8213d;
+  --cream: #fef1e9;
+  --purple: #500130;
+  --light-green:  #a3e696;
+  --clouds: #049dd9;
+  --sun: #fff345;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--font-color);
+  transition: all 1s ease;
 }
 
 a {
@@ -72,7 +86,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-  background-color: cornflowerblue;
+  background-color: var(--link-color);
 }
 
 /* end dark mode */
@@ -108,12 +122,11 @@ a {
   height: 100%;
 }
 
-.main {
+#main {
   grid-area: main;
 }
 
 .navbar {
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,6 +134,7 @@ a {
   width: 100%;
   height: 3.5rem;
   padding: 0 1rem;
+  z-index: 10;
 }
 
 .navbar__title {
@@ -131,10 +145,27 @@ a {
   font-family: 'Just Me Again Down Here', cursive;
   letter-spacing: 0.2rem;
   font-size: 2rem;
+  margin: 0;
+}
+
+.navbar__title h1:hover {
+  text-shadow: 0 0 10px var(--light-green),
+               0 0 20px var(--light-green),
+               0 0 40px var(--light-green),
+               0 0 80px var(--light-green),
+               0 0 120px var(--light-green),
+               0 0 160px var(--light-green);
 }
 
 .navbar__links--link {
   margin-left: 1rem;
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar__links--link:hover {
+  box-shadow: inset 0 -10px 0 0 var(--light-green);
+  border-radius: 22%;
 }
 
 .navbar__icons--icon {

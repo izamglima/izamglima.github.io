@@ -10,16 +10,18 @@ const Navbar = () => {
         <DarkMode/>
       </div>
       <div className="navbar__title">
-        <Link href="/">
-          <a>
-            <h1>iza.m.g.lima - frontend dev</h1>
-          </a>
-        </Link>
+        <div className="navbar__title--box">
+          <Link href="/">
+            <a>
+              <h1>iza.m.g.lima</h1>
+            </a>
+          </Link>
+        </div>
       </div>
       <div className="navbar__links">
         <Link href="/"><a className="navbar__links--link">Home</a></Link>
         <Link href="/about"><a className="navbar__links--link">About</a></Link>
-        <Link href="/projects"><a className="navbar__links--link">Little projects</a></Link>
+        <Link href="/projects"><a className="navbar__links--link">Projects</a></Link>
       </div>
     </nav>
   )
