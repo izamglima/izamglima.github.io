@@ -25,6 +25,13 @@
   background-color: var(--background-color);
   height: 400px;
   overflow: hidden;
+  transition: all 1s ease;
+}
+
+.developer {
+  margin: 0;
+  position: absolute;
+  left: 44%;
 }
 
 .sun {
@@ -36,6 +43,7 @@
   top: 1.4vw;
   right: 6.5vw;
   opacity: 0.3;
+  transition: transform 2.5s;
 }
 
 .inner-sun {
@@ -46,6 +54,29 @@
   position: absolute;
   top: 4vw;
   right: 9vw;
+  transition: transform 2s;
+}
+
+.moon {
+  position: absolute;
+  margin: auto;
+  top: 22vw;
+  right: 9vw;
+  background-color: transparent;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  box-shadow: 2.5rem 5px 0 0 var(--cream);
+  transition: transform 2s;
+}
+
+html[data-theme="dark"] .sun,
+html[data-theme="dark"] .inner-sun {
+  transform: translate(50%, 250%);
+}
+
+html[data-theme="dark"] .moon {
+  transform: translate(10%, -250%);
 }
 
 .mountain {
@@ -168,24 +199,24 @@
 
 .clouds .cloud:nth-child(1) {
   opacity: 0.7;
-  left: 15%;
-  /* animation: moveclouds 25s linear infinite; */
+  left: 10%;
+  animation: moveclouds 25s linear infinite;
 }
 
 .clouds .cloud:nth-child(2) {
-  left: 65%;
+  left: 90%;
   opacity: 0.5;
-  /* animation: moveclouds 30s linear infinite; */
+  animation: moveclouds 30s linear infinite;
 }
 
-/* @keyframes moveclouds {
+@keyframes moveclouds {
   0% {
     left: 0 ;
   }
   100% {
     left: 100;
   }
-} */
+}
 
 .tree-left {
   position: absolute;

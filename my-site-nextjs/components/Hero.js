@@ -3,9 +3,10 @@ import styles from '../styles/Home.module.css'
 const Hero = () => {
   return (
     <div className={styles['hero-background']}>
+      <h2 className={styles.developer}>frontend developer</h2>
       <div className={styles.sun}></div>
       <div className={styles['inner-sun']}></div>
-      <p className='text-center'>there goes my hero</p>
+      <div className={styles.moon}></div>
       <div className={`${styles.mountain} ${styles['mountain-1']}`}>
         <div className={styles.climber}></div>
       </div>
