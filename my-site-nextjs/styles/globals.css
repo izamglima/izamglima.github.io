@@ -54,6 +54,7 @@
   --light-green:  #a3e696;
   --clouds: #049dd9;
   --sun: #fff345;
+  --grey: #e1e5e9;
 }
 
 body {
@@ -89,7 +90,7 @@ a {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: var(--grey);
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -202,7 +203,7 @@ a {
 .footer {
   grid-area: footer;
   padding: 2rem 0;
-  border-top: 3px dotted #e1e5e9;
+  border-top: 3px dotted var(--grey);
 }
 
 .social-links {

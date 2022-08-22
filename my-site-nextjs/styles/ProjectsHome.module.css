@@ -1,0 +1,22 @@
+.projects-home {
+  height: 60vh;
+  border-top: 3px dotted var(--grey);
+}
+
+.projects-home h2 {
+  font-size: 2.5rem;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-list__item {
+  margin: 0 2rem;
+  padding: 2rem;
+  border-radius: 10%;
+  border: 1px solid var(--grey);
+}

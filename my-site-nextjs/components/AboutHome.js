@@ -1,4 +1,4 @@
-import styles from '../styles/About.module.css'
+import styles from '../styles/AboutHome.module.css'
 import Link from 'next/link';
 
 const AboutHome = () => {
