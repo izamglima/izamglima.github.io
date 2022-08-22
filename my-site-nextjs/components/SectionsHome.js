@@ -1,5 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Hero from './Hero';
+import AboutHome from './AboutHome';
+import ProjectsHome from './ProjectsHome';
 
 const SectionsHome = () => {
   return (
@@ -8,10 +10,10 @@ const SectionsHome = () => {
         <Hero />
       </section>
       <section className={styles.main__about}>
-        <p className="text-center">2</p>
+        <AboutHome />
       </section>
       <section className={styles.main__projects}>
-        <p className="text-center">3</p>
+        <ProjectsHome />
       </section>
       
     </>
