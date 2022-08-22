@@ -168,6 +168,7 @@ a {
   padding: 0 1rem;
   z-index: 10;
   transition: all 1s ease;
+  border-bottom: 3px dotted var(--grey);
 }
 
 .navbar__title {
@@ -182,12 +183,7 @@ a {
 }
 
 .navbar__title h1:hover {
-  text-shadow: 0 0 10px var(--light-green),
-               0 0 20px var(--light-green),
-               0 0 40px var(--light-green),
-               0 0 80px var(--light-green),
-               0 0 120px var(--light-green),
-               0 0 160px var(--light-green);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .navbar__links--link {

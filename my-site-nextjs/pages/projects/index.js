@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import ProjectsHome from '../../components/ProjectsHome';
 
 const About = () => {
   return (
@@ -7,8 +8,7 @@ const About = () => {
         <title>iza.m.g.lima | About</title>
       </Head>
       <main className="main">
-        <h1>About</h1>
-        <p>lalala</p>
+        <ProjectsHome />
       </main>
     </>
     

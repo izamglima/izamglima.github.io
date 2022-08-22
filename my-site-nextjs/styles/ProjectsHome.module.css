@@ -1,7 +1,6 @@
-.projects-home {
-  height: 60vh;
-  border-top: 3px dotted var(--grey);
-}
+/* .projects-home {
+  height: 50vh;
+} */
 
 .projects-home h2 {
   font-size: 2.5rem;
@@ -15,8 +14,48 @@
 }
 
 .projects-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   margin: 0 2rem;
   padding: 2rem;
   border-radius: 10%;
   border: 1px solid var(--grey);
+  width: 220px;
+  height: 150px;
+}
+
+.item-kaleidoscope {
+  background-image: url('../public/kaleidoscope-starseeds.gif');
+}
+
+.item-tools {
+  background-image: url('../public/do-it-yourself-tools.gif');
+  background-size: cover;
+}
+
+.item-tools p,
+.item-wordle p,
+.item-kaleidoscope p {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.item-wordle {
+  background-color: var(--peach);
+}
+
+.item-wordle p {
+  text-align: center;
+}
+
+.item-wordle__letter {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 2px;
+  background-color: #54a754;
+  color: #fff;
+  text-shadow: none;
 }

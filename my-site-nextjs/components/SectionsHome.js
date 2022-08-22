@@ -14,6 +14,7 @@ const SectionsHome = () => {
       </section>
       <section className={styles.main__projects}>
         <ProjectsHome />
+        <p className='text-center'>and more to be created</p>
       </section>
       
     </>

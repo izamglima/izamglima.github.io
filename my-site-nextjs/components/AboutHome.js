@@ -23,12 +23,12 @@ const AboutHome = () => {
         <div className={`${styles.star} ${styles['star-4']}`}></div>
           <Link href="/about">
             <a>
-              <p>Carrer, education, works</p>
+              <p>Carrer, education, works...</p>
             </a>
           </Link>
           <Link href="/about">
             <a>
-              <p>My life, my history, my hobbies</p>
+              <p>My life, history, hobbies...</p>
             </a>
           </Link>
         <div className={`${styles.star} ${styles['star-5']}`}></div>

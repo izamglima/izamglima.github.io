@@ -4,6 +4,7 @@
   align-items: center;
   height: 60vh;
   background-image: url('/black-thread-light.png');
+  border-bottom: 3px dotted var(--grey);
 }
 
 .about h2 {
