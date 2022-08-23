@@ -1,0 +1,29 @@
+.row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row > div {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--grey);
+  margin: 4px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.row > div.green {
+  background: var(--wordle-green);
+  border-color: var(--wordle-green);
+}
+.row > div.grey {
+  background: var(--wordle-grey);
+  border-color: var(--wordle-grey);
+}
+.row > div.yellow {
+  background: var(--wordle-yellow);
+  border-color: var(--wordle-yellow);
+}

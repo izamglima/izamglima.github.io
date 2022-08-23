@@ -55,6 +55,9 @@
   --clouds: #049dd9;
   --sun: #fff345;
   --grey: #e1e5e9;
+  --wordle-green: #80e080;
+  --wordle-yellow: #ffec96;
+  --wordle-grey: #dadada;
 }
 
 body {
