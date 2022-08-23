@@ -75,7 +75,6 @@ const useWordle = (solution) => {
       }
       const formatted = formatGuess()
       addNewGuess(formatted)
-      console.log(formatted)
     }
 
     if (key === 'Backspace') {
