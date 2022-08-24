@@ -1,10 +1,12 @@
 import { useState } from "react"
+
 const useWordle = (solution) => {
   const [turn, setTurn] = useState(0)
   const [currentGuess, setCurrentGuess] = useState('')
   const [guesses, setGuesses] = useState([...Array(6)])
   const [history, setHistory] = useState([])
   const [isCorrect, setIsCorrect] = useState(false)
+  const [usedKeys, setUsedKeys] = useState({})
 
   // format a guess into an array of letter objects
   // e.g. [{key: "a", color: "yellow"}]
@@ -42,16 +44,40 @@ const useWordle = (solution) => {
     if (currentGuess === solution) {
       setIsCorrect(true)
     }
+    // add to array of obcjets
     setGuesses((prevGuesses) => {
       let newGuesses = [...prevGuesses]
       newGuesses[turn] = formattedGuess
       return newGuesses
     })
+    // take the previous values and add the currentGuess
+    // as string format
     setHistory((prevHistory) => {
       return [...prevHistory, currentGuess]
     })
     setTurn((prevTurn) => {
       return prevTurn + 1
+    })
+    setUsedKeys((prevUsedKeys) => {
+
+      formattedGuess.forEach((letter) => {
+        const currentColor = prevUsedKeys[letter.key]
+
+        if (letter.color === 'green') {
+          prevUsedKeys[letter.key] = 'green'
+          return
+        }
+        if (letter.color === 'yellow' && currentColor !== 'green') {
+          prevUsedKeys[letter.key] = 'yellow'
+          return
+        }
+        if (letter.color === 'grey' && currentColor !== 'green' && currentColor !== 'yellow') {
+          prevUsedKeys[letter.key] = 'grey'
+          return
+        }
+      })
+      
+      return prevUsedKeys
     })
     setCurrentGuess('')
   }
@@ -94,7 +120,7 @@ const useWordle = (solution) => {
     }
   }
 
-  return {turn, currentGuess, guesses, isCorrect, handleKeyup}
+  return {turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup}
 
 }
 

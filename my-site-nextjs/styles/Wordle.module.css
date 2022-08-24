@@ -1,3 +1,12 @@
+.wordle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wordle h1 {
+  font-size: 2.5rem;
+}
+
 .row {
   text-align: center;
   display: flex;
@@ -66,4 +75,61 @@
     border-color: var(--border-color);
     color: #fff;
   }
+}
+
+.row.current > div.filled {
+  animation: bounce 0.2s ease-in-out forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+    border-color: #ddd;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    border-color: #333;
+  }
+}
+
+.small {
+  margin-bottom: 1rem;
+}
+
+.keypad {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.keypad > div {
+  margin: 5px;
+  width: 40px;
+  height: 50px;
+  background: #eee;
+  display: inline-block;
+  border-radius: 6px;
+  line-height: 50px;
+}
+
+.keypad > div.green {
+  background:  var(--wordle-green);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.keypad > div.yellow {
+  background:  var(--wordle-yellow);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.keypad > div.grey {
+  background:  var(--wordle-grey);
+  color: #fff;
+  transition: all 0.3s ease-in;
 }

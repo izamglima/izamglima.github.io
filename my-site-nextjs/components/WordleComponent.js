@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import useWordle from "../hooks/useWordle";
 import WordleGrid from "./WordleGrid";
+import WordleKeypad from "./WordleKeypad";
 
 const WordleComponent = ({solution}) => {
-  const {currentGuess, handleKeyup, guesses, isCorrect, turn} = useWordle(solution)
+  const {currentGuess, handleKeyup, guesses, isCorrect, turn, usedKeys} = useWordle(solution)
 
   useEffect(() => {
     window.addEventListener('keyup', handleKeyup)
@@ -16,8 +17,8 @@ const WordleComponent = ({solution}) => {
 
   return (
     <>
-      <p>solution - {solution}</p>
       <WordleGrid currentGuess={currentGuess} guesses={guesses} turn={turn} />
+      <WordleKeypad usedKeys={usedKeys} />
     </>
   )
 }

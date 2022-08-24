@@ -5,12 +5,21 @@
   font-style: normal;
 
 }
+
+a, p {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Just Me Again Down Here', cursive;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: "icomoon";
   line-height: 1;
   /* Add 1px margin-top to center the icon */
-
   display: block;
   margin-top: 1px;
   -webkit-font-smoothing: antialiased;
@@ -179,7 +188,6 @@ a {
 }
 
 .navbar__title h1 {
-  font-family: 'Just Me Again Down Here', cursive;
   letter-spacing: 0.2rem;
   font-size: 2rem;
   margin: 0;
@@ -217,13 +225,4 @@ a {
 
 .social-links a {
   color: var(--link-color);
-}
-
-a, p {
-  font-family: 'Sulphur Point', sans-serif;
-  font-size: 1.1rem;
-}
-
-h2 {
-  font-family: 'Just Me Again Down Here', cursive;
 }
