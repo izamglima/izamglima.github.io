@@ -6,15 +6,6 @@
 
 }
 
-a, p {
-  font-family: 'Sulphur Point', sans-serif;
-  font-size: 1.1rem;
-}
-
-h1, h2, h3 {
-  font-family: 'Just Me Again Down Here', cursive;
-}
-
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: "icomoon";
@@ -44,12 +35,14 @@ h1, h2, h3 {
   --font-color: #fff;
   --background-color: #333;
   --link-color: #add8e6;
+  --font-color-button: #333;
 }
 
 [data-theme="light"] {
   --font-color: #333;
   --background-color: #fff;
   --link-color: #6495ed;
+  --font-color-button: #fff;
 }
 
 :root {
@@ -76,7 +69,12 @@ body {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .toggle-theme-wrapper {
@@ -140,13 +138,8 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Sulphur Point', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
@@ -225,4 +218,48 @@ a {
 
 .social-links a {
   color: var(--link-color);
+}
+
+.btn {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--link-color);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: var(--font-color-button);
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+a, p, small, span, button {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Just Me Again Down Here', cursive;
 }
