@@ -4,7 +4,7 @@ const WordleRow = ({guess, currentGuess}) => {
 
   if (guess) {
     return(
-      <div className={`${styles.row} ${styles.past}`}>
+      <div className={`${styles.row}`}>
         {guess.map((letter, i) => (
           <div key={i} className={styles[`${letter.color}`]}>{letter.key}</div>
         ))}

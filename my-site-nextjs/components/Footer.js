@@ -3,6 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer">
+        <p className="text-center">this portifolio was created using Next.js</p>
         <p className="text-center">Get in touch!</p>
         <div className="social-links">
           <div>

@@ -14,8 +14,6 @@ const WordleKeypad = ({ usedKeys }) => {
   return (
     <div className={styles.keypad}>
       {letters && letters.map((letter) => {
-        console.log(usedKeys)
-        console.log(letter)
         const color = usedKeys[letter.key]
         return (
           <div key={letter.key} className={styles[`${color}`]}>{letter.key}</div>
