@@ -6,7 +6,7 @@ const AboutHome = () => {
     <div className={styles.about}>
       <div>
         <div className={`${styles.star} ${styles['star-1']}`}></div>
-        <h2>About...</h2>
+        <h2>About ...</h2>
         <div className={`${styles.star} ${styles['star-0']}`}></div>
       </div>
       <div>
