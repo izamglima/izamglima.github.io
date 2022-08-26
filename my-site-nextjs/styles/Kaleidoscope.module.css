@@ -39,11 +39,10 @@
   clip-path: url(#polygon); 
   height: 200px;
   width: 200px;
-  background: url(https://24.media.tumblr.com/tumblr_mdpt9pqwFb1qhb0iso1_1280.jpg);
   background-size: cover;
   position: absolute;
   transform-origin: top center;
-  animation: turn 5s ease infinite;
+  animation: turn 7s ease infinite;
 }
 
 /* .tile:nth-child(1) {
@@ -75,6 +74,6 @@
     background-position: 0 0;
   }
   50% {
-    background-position: -80px 80px;
+    background-position: -80px 185px;
   }
 }

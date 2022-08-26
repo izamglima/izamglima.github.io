@@ -33,22 +33,22 @@ const Kaleidoscope = () => {
       <main className="main">
         <section className={styles.kaleidoscope}>
           <h1>Kaleidoscope</h1>
-          <p>because i like colors :)</p>
+          <p>because i like colors and shapes :)</p>
           <button className="btn btn-small" onClick={changeBg}>Change image</button>
           <div className={styles.container}>
             <div className={styles.kaleido}>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}`  + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}`  + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
             </div>
             <svg>
               <clipPath id="polygon" clipPathUnits="objectBoundingBox">
