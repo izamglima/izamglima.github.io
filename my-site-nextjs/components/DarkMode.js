@@ -12,11 +12,15 @@ const DarkMode = () => {
   }
 
   const setDark = () => {
-    document.documentElement.setAttribute("data-theme", "dark");
+    if (typeof window !== 'undefined') {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } 
   }
 
   const setLight = () => {
-    document.documentElement.setAttribute("data-theme", "light");
+    if (typeof window !== 'undefined') { 
+      document.documentElement.setAttribute("data-theme", "light");
+    }
   };
 
   return (
