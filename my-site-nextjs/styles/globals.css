@@ -255,6 +255,16 @@ body {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
+input {
+  border: 1px solid var(--grey);
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  transition: all 1s ease;
+  text-align: right;
+}
+
 a, p, small, span, button {
   font-family: 'Sulphur Point', sans-serif;
   font-size: 1.1rem;

@@ -69,11 +69,35 @@
   transform: rotate(-60deg) scaleX(-1);
 }
 
+.btn-small:hover {
+  animation: shake 0.3s ease;
+  animation-iteration-count: 1.5;
+  animation-direction:normal;
+}
+
 @keyframes turn {
   0%,100% {
     background-position: 0 0;
   }
   50% {
     background-position: -80px 185px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  75% {
+    transform: translateX(3%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }

@@ -6,9 +6,13 @@
   font-size: 2.5rem;
 }
 
+.projects-container {
+  margin: 0 2rem;
+}
+
 .projects-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -18,7 +22,6 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin: 0 2rem;
   padding: 2rem;
   border-radius: 10%;
   border: 1px solid var(--grey);
@@ -26,8 +29,27 @@
   height: 150px;
 }
 
+.item-kaleidoscope,
+.item-tools,
+.item-wordle {
+  box-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
 .item-kaleidoscope {
   background-image: url('../public/kaleidoscope-starseeds.gif');
+}
+
+.item-kaleidoscope:hover,
+.item-wordle:hover,
+.item-tools:hover {
+  animation: shake 0.2s ease;
+  animation-iteration-count: 1.5;
+  animation-direction:normal;
 }
 
 .item-tools {
@@ -58,4 +80,23 @@
   background-color: #54a754;
   color: #fff;
   text-shadow: none;
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(3%);
+  }
+  50% {
+    transform: translateX(-3%);
+  }
+  75% {
+    transform: translateX(3%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
