@@ -12,14 +12,18 @@
 .container {
   display: flex;
   width: 100%;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tool {
+  width: 60vw;
+  display: flex;
+  align-items: flex-start;
   border-radius: 6px;
   border: 1px solid var(--grey);
   padding: 1.5rem;
-  margin: 0 2rem;
+  margin: 0 0 2rem 0;
 }
 
 .tool input {
@@ -35,10 +39,36 @@
   font-weight: bolder;
 }
 
-.converter {
+.tool__block {
+  width: 50%;
+}
+
+.tool__block:first-of-type {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.converter__form {
   margin-bottom: 2rem;
+}
+
+.tool__block textarea {
+  width: 100%;
+  min-height: 25vh;
+  color: var(--font-color);
+  border: 1px solid var(--grey);
+  background-color: var(--background-color);
+  border-radius: 6px;
+  transition: all 1s ease;
 }
 
 .btn-calc {
   width: 100%;
+}
+
+.jsonViewer {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 6px;
+  padding: 2rem;
 }

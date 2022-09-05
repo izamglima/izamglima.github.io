@@ -70,8 +70,8 @@ const PxRemConverter = () => {
 
   return (
     <>
-      <p className={`${["text-center"]} ${styles.title}`}>px to rem converter</p>
-      <div className={styles.converter}>
+      <p className={`${styles.title}`}>px to rem converter</p>
+      <div className={styles['converter__form']}>
         <label htmlFor="rootSize">root font size:</label>
         <input 
           ref={refs.root}

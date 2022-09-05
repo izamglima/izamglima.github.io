@@ -73,10 +73,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
 .toggle-theme-wrapper {
   display: flex;
   flex-direction: row;
@@ -186,16 +182,14 @@ body {
   margin: 0;
 }
 
-.navbar__title h1:hover {
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
 .navbar__links--link {
   display: inline-block;
   padding: 10px;
 }
 
-.navbar__links--link:hover {
+.navbar__links--link:hover,
+.navbar__title h1:hover,
+a:hover {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
@@ -265,9 +259,10 @@ input {
   text-align: right;
 }
 
-a, p, small, span, button {
+a, p, small, span, button, label {
   font-family: 'Sulphur Point', sans-serif;
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
