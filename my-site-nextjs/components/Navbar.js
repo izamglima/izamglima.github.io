@@ -6,6 +6,8 @@ import useSound from 'use-sound';
 
 
 const Navbar = () => {
+  const [play] = useSound('/sounds/menu.mp3');
+
   const openMenu = () => {
     if (typeof window !== 'undefined') { 
       var menuToggle = document.querySelector(".navbar__links");
@@ -15,8 +17,6 @@ const Navbar = () => {
 
   const Logo = () => {
     const [play, { stop }] = useSound('/sounds/electric-zap.mp3');
-    //const [play, { stop }] = useSound('/sounds/buzz.mp3');
-
   
     return (
       <button onMouseEnter={() => play()} onMouseLeave={() => stop()}>
@@ -27,7 +27,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* <Image src="/path.png" width={100} height={77} /> */}
       <div className="navbar__icons">
         <DarkMode/>
       </div>
@@ -41,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar__links">
-        <button className={`${["navbar__menu"]}`} onClick={openMenu}>
+        <button className={`${["navbar__menu"]}`} onClick={() => {openMenu(); play();}}>
           <span></span>
         </button>
         <div className={`${["navbar__menu--toggle"]}`}>
