@@ -4,41 +4,41 @@
   height: 500px;
   overflow: hidden;
   transition: all 1s ease;
+  margin-top: 1.5rem;
 }
 
 .developer {
-  margin: 0;
-  position: absolute;
-  left: 44.5%;
+  z-index: 1;
+  text-align: center;
 }
 
 .sun {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background-color: var(--sun);
+  position: relative;
+  top: 6vw;
+  left: 80%;
+  transition: transform 2s ease;
+}
+
+.sun::after {
+  content: '';
   width: 13vw;
   height: 13vw;
   border-radius: 50%;
   background-color: var(--cream);
   position: absolute;
-  top: 1.4vw;
-  right: 6.5vw;
+  top: -25px;
+  right: -27px;
   opacity: 0.3;
-  transition: transform 2.9s ease;
-}
-
-.inner-sun {
-  width: 8vw;
-  height: 8vw;
-  border-radius: 50%;
-  background-color: var(--sun);
-  position: absolute;
-  top: 4vw;
-  right: 9vw;
-  transition: transform 2s ease;
 }
 
 .moon {
   position: absolute;
   margin: auto;
-  top: 22vw;
+  top: 42vw;
   right: 9vw;
   background-color: transparent;
   width: 8vw;
@@ -48,13 +48,12 @@
   transition: transform 2s ease;
 }
 
-html[data-theme="dark"] .sun,
-html[data-theme="dark"] .inner-sun {
-  transform: translate(50%, 250%);
+html[data-theme="dark"] .sun {
+  transform: translate(50%, 550%);
 }
 
 html[data-theme="dark"] .moon {
-  transform: translate(10%, -250%);
+  transform: translate(10%, -450%);
 }
 
 .mountain {

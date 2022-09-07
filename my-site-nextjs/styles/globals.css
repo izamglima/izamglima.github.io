@@ -161,7 +161,6 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   grid-area: header;
   width: 100%;
@@ -172,14 +171,28 @@ body {
   border-bottom: 3px dotted var(--grey);
 }
 
+.navbar__icons,
+.navbar__links {
+  width: 30%;
+}
+
 .navbar__title {
-  cursor: pointer;
+  width: 40%;
+  text-align: center;
 }
 
 .navbar__title h1 {
   letter-spacing: 0.2rem;
   font-size: 2rem;
   margin: 0;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+  transition: transform 1s ease;
 }
 
 .navbar__links--link {
@@ -191,6 +204,73 @@ body {
 .navbar__title h1:hover,
 a:hover {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.navbar__title--box a {
+  display: block;
+}
+
+.navbar__title--box button {
+  padding: 0;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  outline: none;
+  color: var(--font-color);
+}
+
+.navbar__menu {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: transform 1s ease;
+}
+
+.navbar__menu span {
+  display: block;
+  border-top: 4px solid var(--font-color);
+  margin: 2px 0;
+  transition: transform 1s ease;
+}
+
+.open span {
+  transition: border-top 1s ease;
+  border-top: transparent;
+}
+
+.open span::before {
+  transition: transform 1s ease;
+  transform: rotate(124deg) translate(3px, 0px)
+}
+
+.open span::after {
+  transition: transform 1s ease;
+  transform: rotate(50deg) translate(-3px, -1px);
+}
+
+.navbar__menu span::before,
+.navbar__menu span::after {
+  content: '';
+  display: block;
+  width: 20px;
+  margin: 2px 0;
+  border-top: 4px solid var(--font-color);
+  transition: transform 1s ease;
+}
+
+.navbar__menu--toggle {
+  display: flex;
+  position: relative;
+  left: 75%;
+  transition: width 1s ease, left 1s ease, transform 1s ease;
+  width: 0;
+}
+
+.navbar__links.open .navbar__menu--toggle {
+  width: 70%;
+  transform: translate(-105%, 0);
+  transition: width 1s ease, left 1s ease, transform 1s ease;
 }
 
 .footer {

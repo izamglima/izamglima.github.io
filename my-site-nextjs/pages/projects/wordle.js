@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import WordleComponent from '../../components/WordleComponent';
 import styles from '../../styles/Wordle.module.css'
@@ -28,7 +29,7 @@ const Wordle = () => {
           <h1>Wordle clone</h1>
           <p>highly inspired by the original game</p>
           {solution && <WordleComponent solution={solution} />}
-          <small className={styles.small}>made with help of the wonderful netninja / @iamshaunjp *-*</small>
+          <small className={styles.small}>made with help of the wonderful netninja / <Link href="https://www.youtube.com/c/TheNetNinja"><a>@iamshaunjp</a></Link> *-*</small>
         </section>
       </main>
     </>
