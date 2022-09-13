@@ -14,3 +14,10 @@
 .about ul {
   padding-left: 1rem;
 }
+
+@media only screen and (max-width: 500px) { 
+  .title {
+    font-size: 1.7rem;
+  }
+
+}

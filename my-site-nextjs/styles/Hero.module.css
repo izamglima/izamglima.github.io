@@ -46,7 +46,7 @@
   width: 8vw;
   height: 8vw;
   border-radius: 50%;
-  box-shadow: 2.5rem 5px 0 0 var(--cream);
+  box-shadow: 25px 5px 0 0 var(--cream);
   transition: transform 2s ease;
 }
 
@@ -179,23 +179,14 @@ html[data-theme="dark"] .moon {
 
 .clouds .cloud:nth-child(1) {
   opacity: 0.7;
-  left: 5%;
-  animation: moveclouds 20s linear infinite;
-}
+  left: 97%;
+  animation: moveclouds 18s linear infinite;
+} 
 
 .clouds .cloud:nth-child(2) {
   left: 90%;
   opacity: 0.5;
-  animation: moveclouds 15s linear infinite;
-}
-
-@keyframes moveclouds {
-  0% {
-    left: 0 ;
-  }
-  100% {
-    left: 100;
-  }
+  animation: moveclouds 20s linear infinite;
 }
 
 .tree-left {
@@ -363,9 +354,21 @@ html[data-theme="dark"] .moon {
   }
 }
 
+@keyframes moveclouds {
+  0% {
+    left: 0 ;
+  }
+  100% {
+    left: 100;
+  }
+}
 
 @media only screen and (max-width: 500px) { 
   .developer {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+
+  .moon {
+    box-shadow: 15px 5px 0 0 var(--cream);
   }
 }

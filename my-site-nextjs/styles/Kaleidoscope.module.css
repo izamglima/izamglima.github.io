@@ -70,9 +70,8 @@
 }
 
 .btn-small:hover {
-  animation: shake 0.3s ease;
-  animation-iteration-count: 1.5;
-  animation-direction:normal;
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation: slidebg 5s linear infinite;
 }
 
 @keyframes turn {
@@ -84,20 +83,9 @@
   }
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(3%);
-  }
-  50% {
-    transform: translateX(-3%);
-  }
-  75% {
-    transform: translateX(3%);
-  }
-  100% {
-    transform: translateX(0%);
+@keyframes slidebg {
+  to {
+    background-position:20vw;
   }
 }
+

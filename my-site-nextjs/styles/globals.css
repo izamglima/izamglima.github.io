@@ -371,6 +371,9 @@ h1, h2, h3 {
     height: 24px;
   }
   
+  a, p, small, span, button, label {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) { 

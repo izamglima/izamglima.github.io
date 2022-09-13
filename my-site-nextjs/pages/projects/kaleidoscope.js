@@ -37,17 +37,17 @@ const Kaleidoscope = () => {
           <div className={styles.container}>
             <div className={styles.kaleido}>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}`  + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}`  + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat-y url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
             </div>
             <svg>
               <clipPath id="polygon" clipPathUnits="objectBoundingBox">

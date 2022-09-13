@@ -20,6 +20,7 @@
   width: 60vw;
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   border-radius: 6px;
   border: 1px solid var(--grey);
   padding: 1.5rem;
@@ -71,4 +72,21 @@
   width: 50%;
   border-radius: 6px;
   padding: 2rem;
+}
+
+@media only screen and (max-width: 500px) { 
+  .tools .tool {
+    width: 90%;
+  }
+
+  .tools h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) { 
+  .tools .tool__block {
+    text-align: center;
+    width: 100%;
+  }
 }
