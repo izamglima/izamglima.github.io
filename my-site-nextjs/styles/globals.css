@@ -241,7 +241,7 @@ a:hover {
 
 .open span::before {
   transition: transform 1s ease;
-  transform: rotate(124deg) translate(3px, 0px)
+  transform: rotate(127deg) translate(3px, 0px)
 }
 
 .open span::after {
@@ -341,10 +341,65 @@ input {
 
 a, p, small, span, button, label {
   font-family: 'Sulphur Point', sans-serif;
-  font-size: 1.1rem;
   line-height: 1.5;
 }
 
 h1, h2, h3 {
   font-family: 'Calligraffitti', cursive;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar{
+    padding: 0 0.5rem;
+  }
+
+  .navbar__title h1 {
+    font-size: 1.7rem;
+  }
+
+  .toggle-theme {
+    height: 32px;
+    width: 58px;
+  }
+
+  .toggle-theme-wrapper span {
+    font-size: 1.3rem;
+  }
+
+  .slider:before {
+    width: 24px;
+    height: 24px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) { 
+  .navbar__links {
+    overflow: initial;
+  }
+
+  .navbar__menu--toggle {
+    display: none;
+  }
+
+  .navbar__links.open .navbar__menu--toggle {
+    transform: none;
+    z-index: 10;
+    left: 0;
+    border: 1px solid var(--font-color);
+    display: block;
+    top: 50px;
+    text-align: center;
+    background: var(--background-color);
+    transition: all 1s ease;
+  }
+
+  .navbar__links--link {
+    display: block;
+  }
+
+  .navbar__links--link:hover {
+    background-color: var(--font-color);
+    color: var(--background-color);
+  }
 }

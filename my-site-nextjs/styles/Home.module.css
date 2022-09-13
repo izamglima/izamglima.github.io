@@ -19,3 +19,9 @@
 .main__projects {
   margin-bottom: 1.5rem;
 }
+
+.main__about {
+  min-height: 35vh;
+  background-image: url('/black-thread-light.png');
+  border-bottom: 3px dotted var(--grey);
+}
