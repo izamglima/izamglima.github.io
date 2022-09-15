@@ -1,0 +1,374 @@
+.hero-background {
+  position: relative;
+  background-color: var(--background-color);
+  overflow: hidden;
+  transition: all 1s ease;
+  min-height: 35vw;
+}
+
+.developer {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+
+.sun {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  background-color: var(--sun);
+  position: relative;
+  top: -30px;
+  left: 80%;
+  transition: transform 2s ease;
+}
+
+.sun::after {
+  content: '';
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  background-color: var(--cream);
+  position: absolute;
+  left: -30%;
+  top: -30%;
+  opacity: 0.3;
+  box-shadow: 0px 10px 15px 25px var(--cream);
+}
+
+.moon {
+  position: absolute;
+  margin: auto;
+  top: 42vw;
+  right: 9vw;
+  background-color: transparent;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  box-shadow: 25px 5px 0 0 var(--cream);
+  transition: transform 2s ease;
+}
+
+html[data-theme="dark"] .sun {
+  transform: translate(50%, 550%);
+}
+
+html[data-theme="dark"] .moon {
+  transform: translate(10%, -450%);
+}
+
+.mountain {
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.mountain-1 {
+  border-left: 13vw solid transparent;
+  border-right: 9vw solid transparent;
+  border-bottom: 15vw solid var(--dark-orange);
+}
+
+.mountain-1:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -4vw;
+  border-left: 4vw solid transparent;
+  border-right: 13vw solid transparent;
+  border-bottom: 10vw solid var(--light-orange);
+}
+
+.mountain-2 {
+  border-left: 16vw solid transparent;
+  border-right: 12vw solid transparent;
+  border-bottom: 15vw solid var(--dark-orange);
+  left: 10vw;
+}
+
+.mountain-2::before {
+  content: '';
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  left: -5vw;
+  top: -3vw;
+  clip-path: polygon(80% 100%, 100% 91%, 50% 30%);
+  background-color: var(--light-orange);
+}
+
+.mountain-2::after {
+  content: '';
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  left: -2.6vw;
+  clip-path: polygon(85% 140%, 100% 91%, 50% 30%);
+  background-color: var(--light-orange);
+}
+
+.mountain-3 {
+  border-left: 23vw solid transparent;
+  border-right: 35vw solid transparent;
+  border-bottom: 18vw solid var(--dark-orange);
+  left: 25vw;
+}
+
+.mountain-3::before {
+  content: '';
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  left: -20vw;
+  top: 0.9vw;
+  clip-path: polygon(0 74%, 95% 0, 81% 25%);
+  background-color: var(--light-orange);
+}
+
+.mountain-4 {
+  border-left: 0vw solid transparent;
+  border-right: 30vw solid transparent;
+  border-bottom: 8vw solid var(--carrot);
+}
+
+.mountain-5 {
+  border-left: 30vw solid transparent;
+  border-right: 0vw solid transparent;
+  border-bottom: 5vw solid var(--lipstick);
+  right: 0;
+}
+
+.clouds {
+  position: relative;
+  top: -45px;
+}
+
+.cloud {
+  height: 4vw;
+  width: 13vw;
+  background: var(--clouds);
+  border-radius: 40vw;
+  position: relative;
+}
+
+.cloud:before {
+  content: "";
+  position: absolute;
+  top: -2vw;
+  height: 6vw;
+  width: 6vw;
+  left: 2vw;
+  border-radius: 50%;
+  background: var(--clouds);
+}
+
+.cloud:after {
+  content: "";
+  position: absolute;
+  height: 6vw;
+  width: 6vw;
+  top: -3vw;
+  left: 5vw;
+  border-radius: 50%;
+  background: var(--clouds);
+}
+
+.clouds .cloud:nth-child(1) {
+  opacity: 0.7;
+  left: 97%;
+  animation: moveclouds 18s linear infinite;
+} 
+
+.clouds .cloud:nth-child(2) {
+  left: 90%;
+  opacity: 0.5;
+  animation: moveclouds 20s linear infinite;
+}
+
+.tree-left {
+  position: absolute;
+  clip-path: polygon(52% -1%, 
+                     79% 21%, 
+                     53% 16%, 
+                     87% 40%, 
+                     58% 34%, 
+                     50% 61%, 
+                     49% 35%, 
+                     25% 38%, 
+                     51% 15%, 
+                     28% 21%);
+  width: 3vw;
+  height: 4vw;
+  background-color: var(--carrot);
+  bottom: -2.3vw;
+}
+
+.tree-left-1 {  
+  bottom: -3vw;
+  left: 2vw;
+}
+.tree-left-2 {
+  bottom: -3.8vw;
+  left: 4vw;
+}
+
+.tree-left-3 {
+  bottom: -5vw;
+  left: 5.5vw;
+}
+
+.tree-left-4 {
+  bottom: -5vw;
+  left: 9vw;
+}
+
+.tree-left-5 {
+  bottom: -5.5vw;
+  left: 11vw;
+}
+
+.tree-left-6 {
+  bottom: -6.5vw;
+  left: 15vw;
+}
+
+.tree-left-7 {
+  bottom: -8vw;
+  left: 19vw;
+}
+
+.tree-left-8 {
+  bottom: -7.3vw;
+  left: 17vw;
+}
+
+.tree-left-9 {
+  bottom: -8vw;
+  left: 21vw;
+}
+
+.tree-right {
+  position: absolute;
+  clip-path: polygon(52% -1%, 
+                     79% 21%, 
+                     53% 16%, 
+                     87% 40%,
+                     58% 34%, 
+                     50% 61%, 
+                     49% 35%, 
+                     25% 38%, 
+                     51% 15%, 
+                     28% 21%);
+  width: 5.5vw;
+  height: 6.5vw;
+  background-color: var(--lipstick);
+}
+
+.tree-right-1 {
+  bottom: -8.5vw;
+  left: -31vw;
+}
+.tree-right-2 {
+  bottom: -7.8vw;
+  left: -27vw;
+}
+
+.tree-right-3 {
+  bottom: -7.5vw;
+  left: -23vw;
+}
+
+.tree-right-4 {
+  bottom: -8vw;
+  left: -20vw;
+}
+
+.tree-right-5 {
+  bottom: -6vw;
+  left: -18vw;
+}
+
+.tree-right-6 {
+  bottom: -5vw;
+  left: -14vw;
+}
+
+.tree-right-7 {
+  bottom: -5vw;
+  left: -10vw;
+}
+
+.tree-right-8 {
+  bottom: -4vw;
+  left: -7vw;
+}
+
+.tree-right-9{
+  bottom: -4.2vw;
+  left: -3.5vw;
+}
+
+.climber {
+  width: 1.3vw;
+  height: 1.3vw;
+  clip-path: polygon(23% 25%, 
+                     38% 25%, 
+                     41% 5%, 
+                     54% 3%, 
+                     64% 10%, 
+                     59% 26%, 
+                     74% 41%, 
+                     58% 41%, 
+                     60% 100%, 
+                     35% 100%, 
+                     37% 64%, 
+                     16% 39%);
+  background-color: brown;
+  position: absolute;
+  z-index: -1;
+  animation: climber 10s linear infinite;
+  transition: ease .2s;
+}
+
+@keyframes climber {
+  0% {
+    top: 5vw;
+    left: -6.2vw;
+  }
+  
+  50% {
+    top: 1vw;
+    left: -3vw;
+  }
+  70% {
+    top: -1.2vw;
+    left: -0.7vw;
+  }
+  100% {
+    top: 2.7vw;
+    left: 2vw;
+  }
+}
+
+@keyframes moveclouds {
+  0% {
+    left: 0 ;
+  }
+  100% {
+    left: 100;
+  }
+}
+
+@media only screen and (max-width: 500px) { 
+  .developer {
+    font-size: 1.1rem;
+  }
+
+  .moon {
+    box-shadow: 15px 5px 0 0 var(--cream);
+  }
+}

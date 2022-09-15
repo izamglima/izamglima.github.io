@@ -1,0 +1,92 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.tools h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool {
+  width: 60vw;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  border: 1px solid var(--grey);
+  padding: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+.tool input {
+  margin-bottom: 0.5rem;
+}
+
+.tool label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.tool__block {
+  width: 50%;
+}
+
+.tool__block:first-of-type {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.converter__form {
+  margin-bottom: 2rem;
+}
+
+.tool__block textarea {
+  width: 100%;
+  min-height: 25vh;
+  color: var(--font-color);
+  border: 1px solid var(--grey);
+  background-color: var(--background-color);
+  border-radius: 6px;
+  transition: all 1s ease;
+}
+
+.btn-calc {
+  width: 100%;
+}
+
+.jsonViewer {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 500px) { 
+  .tools .tool {
+    width: 90%;
+  }
+
+  .tools h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) { 
+  .tools .tool__block {
+    text-align: center;
+    width: 100%;
+  }
+}
