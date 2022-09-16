@@ -1,14 +1,13 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
-const ReactJson = dynamic(() => import('react-json-view'));
-//import ReactJson from 'react-json-view'
+const DynamicReactJson = dynamic(import('react-json-view'), { ssr: false });
 import { useState } from 'react';
 import styles from '../styles/Tools.module.css'
 
 
 const JsonViewer = () => {
   const JsonConfig = {
-    "type": "front endddd",
+    "type": "front end",
     "items": [{ "name": 10, "url": true }]
   };
   const [state, setState] = useState(JsonConfig);
@@ -42,7 +41,7 @@ const JsonViewer = () => {
       </div>
       <div className={styles.jsonViewer}>
         
-        {ReactJson && <ReactJson src={state} />}
+        {DynamicReactJson && <DynamicReactJson src={state} />}
       </div> 
     </>
   )
