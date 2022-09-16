@@ -56,7 +56,7 @@ const Kaleidoscope = () => {
             </svg>
           </div>
           <small className={styles.small}>
-            Coined by its Scottish inventor David Brewster, "kaleidoscope" is derived from the Ancient Greek word καλός <i>(kalos)</i>, "beautiful, beauty", εἶδος <i>(eidos)</i>, "that which is seen: form, shape" and σκοπέω <i>(skopeō)</i>, "to look to, to examine", hence "observation of beautiful forms." 
+            Coined by its Scottish inventor David Brewster, &quot;kaleidoscope&quot; is derived from the Ancient Greek word καλός <i>(kalos)</i>, &quot;beautiful, beauty&quot;, εἶδος <i>(eidos)</i>, &quot;that which is seen: form, shape&quot; and σκοπέω <i>(skopeō)</i>, &quot;to look to, to examine&quot;, hence &quot;observation of beautiful forms.&quot; 
           <Link href="https://en.wikipedia.org/wiki/Kaleidoscope" target="_blank">
             <a> [wiki] </a>
           </Link>

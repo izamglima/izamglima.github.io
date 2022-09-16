@@ -1,7 +1,3 @@
-/* .projects-home {
-  height: 50vh;
-} */
-
 .projects-home h2 {
   font-size: 2.5rem;
 }
@@ -48,9 +44,9 @@
 .item-kaleidoscope:hover,
 .item-wordle:hover,
 .item-tools:hover {
-  animation: gelatine 0.5s ease;
+  animation: gelatine 0.4s infinite;
   animation-iteration-count: 1.5;
-  animation-direction:normal;
+  animation-direction: normal;
 }
 
 .item-tools {
