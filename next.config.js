@@ -3,6 +3,10 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
+  assetPrefix: isProd ? '/izamglima.github.com/' : '',
+  images: {
+    unoptimized: true,
+  },
   //reactStrictMode: true,
   swcMinify: true,
   webpack: (config, options) => {
