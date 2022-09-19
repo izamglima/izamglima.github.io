@@ -7,9 +7,10 @@ const Kaleidoscope = () => {
   //let photo = 1;
   const [photo, setPhoto] = useState(1)
   const [photosLength, setPhotosLength] = useState(0);
+  const path = 'https://izamglima.github.io/mysite-photos/'
 
   useEffect(() => {
-    fetch('http://localhost:3000/data/photos.json')
+    fetch('/data/photos.json')
     .then(res => res.json())
     .then(json => {
       setPhotosLength((prev) => {
@@ -37,17 +38,17 @@ const Kaleidoscope = () => {
           <div className={styles.container}>
             <div className={styles.kaleido}>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}`  + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
                 <div className={styles.tile} style={{
-                  background: "center / cover repeat url('http://localhost:3000/mysite-photos/" + `${photo}` + ".jpg')"}}></div>
+                  background: "center / cover repeat url('" + `${path}` + `${photo}` + ".jpg')"}}></div>
             </div>
             <svg>
               <clipPath id="polygon" clipPathUnits="objectBoundingBox">

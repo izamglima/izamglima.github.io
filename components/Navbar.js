@@ -15,6 +15,11 @@ const Navbar = () => {
     }
   }
 
+  const closeMenu = () => {
+    var menu = document.querySelector(".navbar__links");
+    menu.classList.remove('open')
+  }
+
   const Logo = () => {
     const [play, { stop }] = useSound('/sounds/electric-zap.mp3');
   
@@ -44,9 +49,9 @@ const Navbar = () => {
           <span></span>
         </button>
         <div className={`${["navbar__menu--toggle"]}`}>
-          <Link href="/"><a className="navbar__links--link">Home</a></Link>
-          <Link href="/about"><a className="navbar__links--link">About</a></Link>
-          <Link href="/projects"><a className="navbar__links--link">Projects</a></Link>
+          <Link href="/"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>Home</a></Link>
+          <Link href="/about"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>About</a></Link>
+          <Link href="/projects"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>Projects</a></Link>
         </div>
       </div>
     </nav>

@@ -7,7 +7,7 @@ import styles from '../../styles/Wordle.module.css'
 const Wordle = () => {
   const [solution, setSolution] = useState(null);
   useEffect(() => {
-    fetch('http://localhost:3000/data/db.json')
+    fetch('/data/db.json')
     .then(res => res.json())
     .then(json => {
       //console.log(json)

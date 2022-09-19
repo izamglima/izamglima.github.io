@@ -88,5 +88,10 @@
   .tools .tool__block {
     text-align: center;
     width: 100%;
+    padding-right: 0;
+  }
+
+  .jsonViewer {
+    width: 100%;
   }
 }

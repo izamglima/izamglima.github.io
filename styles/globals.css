@@ -349,12 +349,16 @@ h1, h2, h3 {
 }
 
 @media only screen and (max-width: 500px) {
-  .navbar{
+  .navbar {
     padding: 0 0.5rem;
   }
 
   .navbar__title h1 {
     font-size: 1.7rem;
+  }
+
+  .navbar__title {
+    padding: 5px 0 0 8px;
   }
 
   .toggle-theme {
