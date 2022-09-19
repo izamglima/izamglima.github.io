@@ -36,6 +36,7 @@
   --background-color: #333;
   --link-color: #add8e6;
   --font-color-button: #333;
+  --background-about: #333;
 }
 
 [data-theme="light"] {
@@ -43,6 +44,7 @@
   --background-color: #fff;
   --link-color: #6495ed;
   --font-color-button: #fff;
+  --background-about: #f1f1f1;
 }
 
 :root {
@@ -277,6 +279,7 @@ a:hover {
   grid-area: footer;
   padding: 2rem 0;
   border-top: 3px dotted var(--grey);
+  background-color: var(--background-about);
 }
 
 .social-links {
@@ -329,6 +332,11 @@ a:hover {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
+.btn-small:hover {
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  animation: slidebg 5s linear infinite;
+}
+
 input {
   border: 1px solid var(--grey);
   padding: 0.75rem;
@@ -346,6 +354,13 @@ a, p, small, span, button, label {
 
 h1, h2, h3 {
   font-family: 'Calligraffitti', cursive;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import ProjectsHome from '../../components/ProjectsHome';
 
-const About = () => {
+const Projects = () => {
   return (
     <>
       <Head>
-        <title>iza.m.g.lima | About</title>
+        <title>iza.m.g.lima | Projects</title>
       </Head>
       <main className="main">
         <ProjectsHome />
@@ -15,4 +15,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default Projects;

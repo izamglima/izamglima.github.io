@@ -43,11 +43,8 @@
   position: absolute;
   transform-origin: top center;
   animation: turn 7s ease infinite;
+  transition: background-image 1.5s ease-in-out;
 }
-
-/* .tile:nth-child(1) {
-
-} */
 
 .tile:nth-child(2) {
   transform: rotate(60deg) scaleX(-1);
@@ -69,23 +66,12 @@
   transform: rotate(-60deg) scaleX(-1);
 }
 
-.btn-small:hover {
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-  animation: slidebg 5s linear infinite;
-}
-
 @keyframes turn {
   0%,100% {
     background-position: 0 0;
   }
   50% {
     background-position: -80px 185px;
-  }
-}
-
-@keyframes slidebg {
-  to {
-    background-position:20vw;
   }
 }
 

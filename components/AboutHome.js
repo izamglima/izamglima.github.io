@@ -17,7 +17,7 @@ const AboutHome = () => {
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/about/more">
               <a>
                 <p>My life, history, hobbies...</p>
               </a>
