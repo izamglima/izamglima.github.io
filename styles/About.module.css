@@ -1,6 +1,7 @@
 .resume {
     background-color: var(--background-about);
     transition: background-color 1s ease;
+    padding-bottom: 2rem;
 }
 
 .resume h1 {
@@ -19,6 +20,7 @@
 }
 
 .box {
+    position: relative;
     padding: 2rem 1rem;
     background-color: var(--background-color);
     border: 1px solid var(--wordle-grey);
@@ -55,6 +57,27 @@ aside.box {
     display: inline-block;
     border-radius: 16px;
     margin: 5px;
+}
+
+.bg {
+    width: 100%;
+    height: 15rem;
+    background: url("/etretat.jpeg") center / cover;   
+}
+
+.avatar {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: url("/avatar.jpeg") center / cover;
+    border: 5px solid #FFF;
+    top: 195px;
+    left: 22px;
+}
+
+.link {
+    color: var(--font-color-button);
 }
 
 @media only screen and (max-width: 1000px) {

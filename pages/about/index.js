@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/About.module.css'
 
@@ -28,6 +29,8 @@ const About = () => {
             </aside>
             <div>
               <div className={styles.box}>
+                  <div className={styles.bg}></div>
+                  <div className={styles.avatar}></div>
                   <h2>Izabela Moreira Germer de Lima</h2>
                   <p>Amstelveen, North Holland, Netherlands</p>
               </div>
@@ -110,7 +113,7 @@ const About = () => {
           </div>
 
           <div className="text-center">
-            <button className="btn btn-small">More about me ...</button>
+            <button className="btn btn-small"><Link href="/about/more"><a className={styles.link}>More about me</a></Link></button>
           </div>
         </section>
       </main>
