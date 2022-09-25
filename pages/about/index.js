@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/About.module.css'
 
@@ -18,14 +17,17 @@ const About = () => {
               <span className={styles.pill}>CSS3</span>
               <span className={styles.pill}>Javascript</span>
               <span className={styles.pill}>jQuery</span>
+              <span className={styles.pill}>Git</span>
               <span className={styles.pill}>HTML5</span>
-              <span className={styles.pill}>GruntJs</span>
+              <span className={styles.pill}>Task Runners</span>
               <span className={styles.pill}>REST APIs</span>
               <span className={styles.pill}>CI / CD</span>
               <span className={styles.pill}>Angular</span>
+              <span className={styles.pill}>Responsive Design</span>
               <span className={styles.pill}>NgRx</span>
               <span className={styles.pill}>React</span>
-              <span className={styles.pill}>Scrum</span>
+              <span className={styles.pill}>DOM Manipulations</span>
+              <span className={styles.pill}>Agile</span>
             </aside>
             <div>
               <div className={styles.box}>
@@ -113,7 +115,7 @@ const About = () => {
           </div>
 
           <div className="text-center">
-            <button className="btn btn-small"><Link href="/about/more"><a className={styles.link}>More about me</a></Link></button>
+            <Link href="/about/more"><a className={`${styles.link} ${"btn"} ${"btn-small"}`}>More about me</a></Link>
           </div>
         </section>
       </main>

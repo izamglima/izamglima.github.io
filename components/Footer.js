@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <p className="text-center">this portifolio was created using Next.js</p>
-        <p className="text-center">i'm not very active on social media, but here they are:</p>
+        <p className="text-center">social links if you want to connect or just a sneak peek :)</p>
         <div className="social-links">
           <div>
             <Link href="https://www.linkedin.com/in/izabela-lima-916370110">

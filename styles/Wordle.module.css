@@ -87,6 +87,14 @@
   border: 1px solid var(--grey);
 }
 
+.keypad > div.margin {
+  margin-right: 8px;
+}
+
+.keypad > div.font {
+  font-size: smaller;
+}
+
 .keypad > div.green {
   background:  var(--wordle-green);
   color: var(--font-color);

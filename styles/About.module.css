@@ -1,96 +1,122 @@
 .resume {
-    background-color: var(--background-about);
-    transition: background-color 1s ease;
-    padding-bottom: 2rem;
+	background-color: var(--background-about);
+	transition: background-color 1s ease;
+	padding-bottom: 2rem;
 }
 
 .resume h1 {
-    margin-top: 0;
-    font-size: 2.5rem;
-    padding-top: 2rem;
+	margin-top: 0;
+	font-size: 2.5rem;
+	padding-top: 2rem;
 }
 
 .container {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    gap: 2rem;
-    padding: 0 2rem;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+	gap: 2rem;
+	padding: 0 2rem;
 }
 
 .box {
-    position: relative;
-    padding: 2rem 1rem;
-    background-color: var(--background-color);
-    border: 1px solid var(--wordle-grey);
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    transition: background-color 1s ease;
+	position: relative;
+	padding: 2rem 1rem;
+	background-color: var(--background-color);
+	border: 1px solid var(--wordle-grey);
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	transition: background-color 1s ease;
+	text-align: justify;
 }
 
 .item {
-    border-bottom: 1px solid var(--wordle-grey);
+	border-bottom: 1px solid var(--wordle-grey);
 }
 
 .item:last-child {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 .item small {
-    margin-left: 8px;
+	margin-left: 8px;
 }
 
 .item small:first-of-type {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 aside.box {
-    text-align: center;
-    position: sticky;
-    top: 0;
+	text-align: center;
+	position: sticky;
+	top: 0;
 }
 
 .pill {
-    padding: 7px 14px;
-    border: 1px solid var(--wordle-grey);
-    display: inline-block;
-    border-radius: 16px;
-    margin: 5px;
+	padding: 7px 14px;
+	border: 1px solid var(--wordle-grey);
+	display: inline-block;
+	border-radius: 16px;
+	margin: 5px;
 }
 
 .bg {
-    width: 100%;
-    height: 15rem;
-    background: url("/etretat.jpeg") center / cover;   
+	border-radius: 10px;
+	border: 1px solid var(--wordle-grey);
+	width: 100%;
+	height: 15rem;
+	background: url("/etretat.jpeg") center / cover;   
 }
 
 .avatar {
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background: url("/avatar.jpeg") center / cover;
-    border: 5px solid #FFF;
-    top: 195px;
-    left: 22px;
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background: url("/avatar.jpeg") center / cover;
+	border: 5px solid #FFF;
+	top: 195px;
+	left: 22px;
 }
 
 .link {
-    color: var(--font-color-button);
+	color: var(--font-color-button);
+	line-height: 2.8;
+}
+
+.title {
+	margin-top: 0;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-top: 2rem;
+}
+
+.more {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more .box {
+	width: 45vw;
 }
 
 @media only screen and (max-width: 1000px) {
-    .resume h1 {
-        font-size: 1.7rem;
-    }
+	.resume h1, .title {
+		font-size: 1.7rem;
+	}
 
-    .container {
-        flex-wrap: wrap;
-    }
+	.container {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
 
-    aside.box {
-        position: initial;
-        top: initial;
-    }
+	aside.box {
+		position: initial;
+		top: initial;
+	}
+
+	.more .box {
+		width: 95vw;
+	}
 }
