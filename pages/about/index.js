@@ -106,7 +106,7 @@ const About = () => {
               <div className={styles.box}>
                   <h3>Languages</h3>
                   <div className={styles.item}>
-                    <small>Português</small>
+                    <small>Portuguese</small>
                     <small>English</small>
                     <small>Dutch basic</small>
                   </div>

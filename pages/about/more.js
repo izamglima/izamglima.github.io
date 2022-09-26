@@ -42,8 +42,8 @@ const More = () => {
 
             <p>Besides work I like to listen to music and podcasts, spend time outside walking, 
               biking, swimming. Cooking is also a thing that I like a lot, which I learned with 
-              my grandmother. Also, I appreciate art and try to do some drawings and paitings.
-              I read about psychology, human behavior, politics, literature, philosophy and spirituality and mysticism. 
+              my grandmother. I appreciate art and try to do some drawings and paitings.
+              Also, I like to read about psychology, human behavior, politics, literature, spirituality and mysticism. 
             </p>
           </div>
         </div>
