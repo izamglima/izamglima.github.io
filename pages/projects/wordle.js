@@ -6,18 +6,15 @@ import styles from '../../styles/Wordle.module.css'
 
 const Wordle = () => {
   const [solution, setSolution] = useState(null);
+  
   useEffect(() => {
     fetch('/data/db.json')
     .then(res => res.json())
     .then(json => {
-      //console.log(json)
-      // rand int 0 - 19
       const rand = json.solutions[Math.floor(Math.random()*json.solutions.length)]
       setSolution(rand.word)
     })
   }, [setSolution]);
-
-  
 
   return (
     <>

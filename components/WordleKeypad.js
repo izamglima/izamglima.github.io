@@ -18,11 +18,19 @@ const WordleKeypad = ({ usedKeys }) => {
   }, [])
 
   const insertLetter = (letter) => {
-    console.log(letter.value)
-    setClicked(letter)
+    console.log(letter)
+  }
+
+  const insertDel = () => {
+    //tbd
+  }
+
+  const insertEnter = () => {
+    //tbd
   }
 
   return (
+    <>
     <div className={styles.keypad}>
       
       {letters && letters.map((letter, i) => {
@@ -30,15 +38,17 @@ const WordleKeypad = ({ usedKeys }) => {
         if (i === 18) {
           fix = 'margin'
         }
-        if (i === 19 || i == 27) {
-          fix = 'font'
-        }
         const color = usedKeys[letter.key]
         return (
-          <div key={letter.key} className={`${styles[`${color}`]} ${styles[`${fix}`]}`} onClick={insertLetter}>{letter.key}</div>
+          <div key={letter.key} className={`${styles[`${color}`]} ${styles[`${fix}`]}`} onClick={() => insertLetter(letter.key)}>{letter.key}</div>
         )
       })}
     </div>
+    <div className={styles.keypad}>
+      <div key={"del"} className={styles.control} onClick={insertDel} >❌</div>
+      <div key={"enter"} className={styles.control} onClick={insertEnter} >✅</div>
+    </div>
+    </>
   )
 }
 

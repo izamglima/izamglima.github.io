@@ -70,7 +70,7 @@
 }
 
 .keypad {
-  max-width: 500px;
+  max-width: 532px;
   margin: 20px auto;
   text-align: center;
   cursor: pointer;
@@ -85,13 +85,14 @@
   border-radius: 6px;
   line-height: 50px;
   border: 1px solid var(--grey);
+  text-transform: uppercase;
 }
 
 .keypad > div.margin {
-  margin-right: 8px;
+  margin-right: 40px;
 }
 
-.keypad > div.font {
+.keypad > div.control {
   font-size: smaller;
 }
 
@@ -191,5 +192,22 @@
   100% {
     transform: scale(1);
     border-color: #333;
+  }
+}
+
+@media only screen and (max-width: 520px) { 
+  div.keypad {
+    padding: 0 1rem;
+  }
+
+  .keypad > div {
+    width: 35px;
+    height: 45px;
+    line-height: 47px;
+    font-size: smaller;
+  }
+  
+  .keypad > div.margin {
+    margin-right: 5px;
   }
 }
