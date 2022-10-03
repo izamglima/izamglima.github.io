@@ -86,6 +86,7 @@
   line-height: 50px;
   border: 1px solid var(--grey);
   text-transform: uppercase;
+  user-select: none;
 }
 
 .keypad > div.margin {
