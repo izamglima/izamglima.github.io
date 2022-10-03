@@ -87,40 +87,64 @@ const useWordle = (solution) => {
   const handleKeyup = ({key}) => {
 
     if (key === 'Enter') {
-      if (turn > 5) {
-        console.log('end')
-        return
-      }
-      if (history.includes(currentGuess)) {
-        console.log('already tried this word')
-        return
-      }
-      if (currentGuess.length !== 5) {
-        console.log('word must be 5 chars long')
-        return
-      }
-      const formatted = formatGuess()
-      addNewGuess(formatted)
+      enterWord()
     }
 
     if (key === 'Backspace') {
-      setCurrentGuess((prev) => {
-        return prev.slice(0, -1)
-      })
+      deleteLetter()
       return
     }
 
     // only allows a to z letters
     if (/^[A-Za-z]$/.test(key)) {
-      if (currentGuess.length < 5) {
-        setCurrentGuess((prev) => {
-          return prev + key
-        })
-      }
+      enterLetter(key)
     }
   }
 
-  return {turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup}
+  const handleClickedDel = () => {
+    deleteLetter()
+  }
+
+  const handleClickedEnter = () => {
+    enterWord()
+  }
+
+  const handleClickedLetter = (key) => {
+    enterLetter(key)
+  }
+
+  const enterWord = () => {
+    if (turn > 5) {
+      console.log('end')
+      return
+    }
+    if (history.includes(currentGuess)) {
+      console.log('already tried this word')
+      return
+    }
+    if (currentGuess.length !== 5) {
+      console.log('word must be 5 chars long')
+      return
+    }
+    const formatted = formatGuess()
+    addNewGuess(formatted)
+  }
+
+  const enterLetter = (key) => {
+    if (currentGuess.length < 5) {
+      setCurrentGuess((prev) => {
+        return prev + key
+      })
+    }
+  }
+
+  const deleteLetter = () => {
+    setCurrentGuess((prev) => {
+      return prev.slice(0, -1)
+    })
+  }
+
+  return {turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup, handleClickedDel, handleClickedEnter, handleClickedLetter}
 
 }
 

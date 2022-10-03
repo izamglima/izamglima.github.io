@@ -6,7 +6,7 @@ import WordleKeypad from "./WordleKeypad";
 import styles from '../styles/Wordle.module.css'
 
 const WordleComponent = ({solution}) => {
-  const {currentGuess, handleKeyup, guesses, isCorrect, turn, usedKeys} = useWordle(solution)
+  const {currentGuess, handleKeyup, guesses, isCorrect, turn, usedKeys, handleClickedDel, handleClickedLetter, handleClickedEnter} = useWordle(solution)
   const [showModal, setShowModal] = useState(false)
   const [endGame, setEndGame] = useState(false)
 
@@ -29,7 +29,7 @@ const WordleComponent = ({solution}) => {
     }
 
     return () => window.removeEventListener('keyup', handleKeyup)
-  },[handleKeyup, isCorrect, turn, endGame])
+  }, [handleKeyup, isCorrect, turn, endGame, currentGuess])
 
   const handleClick = close => {
     setShowModal(close)
@@ -39,7 +39,7 @@ const WordleComponent = ({solution}) => {
     <>
       <div className={styles[`endGame-${endGame}`]}>
         <WordleGrid currentGuess={currentGuess} guesses={guesses} turn={turn} />
-        <WordleKeypad usedKeys={usedKeys} />
+        <WordleKeypad usedKeys={usedKeys} handleClickedDel={handleClickedDel} handleClickedEnter={handleClickedEnter} handleClickedLetter={handleClickedLetter} />
       </div>
       {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution} handleClick={handleClick} />}
     </>

@@ -1,32 +1,31 @@
 import { useState, useEffect } from "react";
 import styles from '../styles/Wordle.module.css'
-import useWordle from "../hooks/useWordle";
 
-const WordleKeypad = ({ usedKeys }) => {
-  const {click} = useWordle()
-  const [clicked, setClicked] = useState(null)
+const WordleKeypad = ({ usedKeys, handleClickedDel, handleClickedEnter, handleClickedLetter }) => {
+  //const [clicked, setClicked] = useState(null)
 
   const [letters, setLetters] = useState(null)
+
   useEffect(() => {
+    
     fetch('/data/db.json')
     .then(res => res.json())
     .then(json => {
       setLetters(json.letters)
     })
 
-
   }, [])
 
   const insertLetter = (letter) => {
-    console.log(letter)
+    handleClickedLetter(letter)
   }
 
   const insertDel = () => {
-    //tbd
+    handleClickedDel()
   }
 
   const insertEnter = () => {
-    //tbd
+    handleClickedEnter()
   }
 
   return (
