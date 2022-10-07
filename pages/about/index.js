@@ -61,10 +61,11 @@ const About = () => {
                     <p>Front-end development of an investment and financing system using technologies such as: HTML5, SASS, CSS3, Flexbox, Bootstrap 4, Grunt, Javascript and typical CRUD operations using REST.</p>
                   </div>
                   <div className={styles.item}>
-                    <h4>Frontend developer and Backend developer</h4>
+                    <h4>Frontend developer</h4>
                     <small>Stoom - Soluções em E-commerce · Full-time</small>
                     <small>Jan 2016 - Dec 2017 · 2 yrs</small>
-                    <p>Web commerce implementation and maintenance. Worked with the following technologies: Java Spring with Struts, Hibernate, PostgreSQL in the Back-end. In Frontend: HTML5, CSS3, Vanilla Javascript and jQuery; Besides that, I had the opportunity to create and monitor A/B tests, Landing Pages, using HotJar and Google Analytics.</p>
+                    <p>Web commerce implementation and maintenance.
+                       Worked with the following technologies: Java Spring with Struts, Hibernate, PostgreSQL in the Back-end. In Frontend: HTML5, CSS3, Vanilla Javascript and jQuery; Besides that, I had the opportunity to create and monitor A/B tests, Landing Pages, using HotJar and Google Analytics.</p>
                   </div>
               </div>
               <div className={styles.box}>
@@ -108,7 +109,7 @@ const About = () => {
                   <div className={styles.item}>
                     <small>Portuguese</small>
                     <small>English</small>
-                    <small>Dutch basic</small>
+                    <small>Dutch basic (currently studying)</small>
                   </div>
               </div>
             </div>

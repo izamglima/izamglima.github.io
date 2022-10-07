@@ -99,6 +99,7 @@ aside.box {
 
 .more .box {
 	width: 45vw;
+	text-align: center;
 }
 
 @media only screen and (max-width: 1000px) {
