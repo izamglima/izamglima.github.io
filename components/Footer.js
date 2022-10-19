@@ -17,7 +17,7 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link href="https://www.instagram.com/izamglima_/">
+            <Link href="https://github.com/izamglima">
               <a className="icon-github" target="_blank"></a>
             </Link>
           </div>

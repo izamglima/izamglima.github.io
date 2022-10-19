@@ -74,6 +74,7 @@
   margin: 20px auto;
   text-align: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .keypad > div {
