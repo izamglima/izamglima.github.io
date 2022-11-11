@@ -28,7 +28,8 @@
 
 .item-kaleidoscope,
 .item-tools,
-.item-wordle {
+.item-wordle,
+.item-tarot {
   box-shadow:
   0 1px 1px hsl(0deg 0% 0% / 0.075),
   0 2px 2px hsl(0deg 0% 0% / 0.075),
@@ -43,7 +44,8 @@
 
 .item-kaleidoscope:hover,
 .item-wordle:hover,
-.item-tools:hover {
+.item-tools:hover,
+.item-tarot:hover {
   animation: gelatine 0.4s infinite;
   animation-iteration-count: 1.5;
   animation-direction: normal;
@@ -56,8 +58,14 @@
 
 .item-tools p,
 .item-wordle p,
-.item-kaleidoscope p {
+.item-kaleidoscope p,
+.item-tarot p {
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.item-tarot {
+  background-image: url('../public/tarot-2.jpg');
+  background-size: cover;
 }
 
 .item-wordle {

@@ -37,6 +37,13 @@ const ProjectsHome = () => {
               </div>
             </a>
           </Link>
+          <Link href="/projects/tarot">
+            <a>
+              <div className={`${styles['projects-list__item']} ${styles['item-tools']}`}>
+                <p>tarot *</p>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
     </section>

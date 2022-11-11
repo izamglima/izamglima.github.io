@@ -22,6 +22,9 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+        <div className="text-center">
+          <small><a href="https://www.freepik.com/free-vector/hand-drawn-tarot-cards-background_18493570.htm#query=illustrations%20tarot&position=0&from_view=search&track=sph">* Image by coolvector</a> on Freepik</small>
+        </div>
     </footer>
   )
 }

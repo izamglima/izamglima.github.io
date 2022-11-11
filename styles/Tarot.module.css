@@ -1,0 +1,97 @@
+.tarot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarot h1 {
+  font-size: 2.5rem;
+}
+
+.small {
+  text-align: center;
+  margin: 2rem 5rem;
+}
+
+.small a {
+  color: var(--link-color);
+}
+
+.container {
+  margin: 2rem 0;
+  display: flex;
+  position: relative;
+  width: 95vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  transition: height 1s ease, visibility 0s 1s;
+}
+
+.deck {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 85vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem;
+  cursor: move;
+}
+
+.drag { 
+  display: inline-block;
+}
+
+.container > div {
+  position: absolute;
+}
+
+.animate1 {
+  animation: shuffle 0.9s ease-in-out infinite;
+}
+
+.animate2 {
+  animation: shuffle2 0.9s ease-in-out infinite;
+}
+
+.card-border {
+  border: 1px solid var(--grey);
+  border-radius: 17px;
+  height: 390px;
+  width: 250px;
+}
+
+.card-body {
+  height: 390px;
+  width: 250px;
+  background-image: url('../public/card.jpg');
+  background-size: cover;
+  border: 10px solid #FFF;
+  border-radius: 17px;
+  box-shadow: -2px 5px 2px 3px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%)
+}
+
+.deck .card-border, 
+.deck .card-body {
+  width: 20vh;
+  height: 35vh;
+}
+
+@keyframes shuffle {
+  0% { transform: translateX(0); z-index: 2;}
+  25% { transform: translateX(-50px); z-index: 2;}
+  50% { transform: translateX(-150px);  z-index: -1; }
+  /* 75% { transform: translateX(-50px); z-index: 1; } */
+  100% { transform: translateX(0); z-index: -1; }
+}
+
+@keyframes shuffle2 {
+  0% { transform: translateX(0); z-index: 1;}
+  25% { transform: translateX(50px); z-index: 1;}
+  50% { transform: translateX(150px);  z-index: 2; }
+  /* 75% { transform: translateX(50px); z-index: 2; } */
+  100% { transform: translateX(0); z-index: 2; }
+}
