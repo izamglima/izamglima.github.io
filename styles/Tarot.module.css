@@ -8,6 +8,12 @@
   font-size: 2.5rem;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .small {
   text-align: center;
   margin: 2rem 5rem;
@@ -15,6 +21,11 @@
 
 .small a {
   color: var(--link-color);
+}
+
+.small p { 
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .container {
@@ -26,23 +37,6 @@
   align-items: center;
   justify-content: center;
   transition: height 1s ease, visibility 0s 1s;
-}
-
-.deck {
-  margin: 2rem 0;
-  display: flex;
-  flex-wrap: nowrap;
-  position: relative;
-  width: 85vw;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 2rem;
-  cursor: move;
-}
-
-.drag { 
-  display: inline-block;
 }
 
 .container > div {
@@ -74,11 +68,36 @@
   box-shadow: -2px 5px 2px 3px hsl(0deg 0% 0% / 8%), 0 2px 2px hsl(0deg 0% 0% / 8%), 0 4px 4px hsl(0deg 0% 0% / 8%), 0 8px 8px hsl(0deg 0% 0% / 8%), 0 16px 16px hsl(0deg 0% 0% / 8%)
 }
 
-.deck .card-border, 
-.deck .card-body {
-  width: 20vh;
-  height: 35vh;
+.modal .icon-cross {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 45px;
+  color: #ddd;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
+
+.modal {
+  background: rgb(63 81 181 / 30%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.modal div {
+  max-width: 480px;
+  background: var(--background-color);
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10% auto;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
 
 @keyframes shuffle {
   0% { transform: translateX(0); z-index: 2;}

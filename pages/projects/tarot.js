@@ -3,10 +3,24 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Tarot.module.css'
 import Card from '../../components/Card';
+import ModalTarot from '../../components/ModalTarot';
 
 const Tarot = () => {
   const [animation, setAnimation] = useState(false);
   const [animation2, setAnimation2] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [tarotCard, setTarotCard] = useState(1);
+  const TOTAL = 36;
+
+  useEffect(() => {
+    fetch('/data/tarot.json')
+    .then(res => res.json())
+    .then(json => {
+      const rand = Math.floor(Math.random()*TOTAL)
+      // find in json the rand number
+      //setTarotCard(rand)
+    })
+  }, []);
 
   const shuffleCards = () => {
     setAnimation(true);
@@ -22,9 +36,14 @@ const Tarot = () => {
     document.getElementById('ready').hidden = true;
     document.getElementById('container').classList.add('hidden');
     document.getElementById('shuffle').hidden = true;
-    document.getElementById('deck').classList.remove('hidden');
-    document.getElementById('deck').classList.add('visible');
+    setTimeout(() => setShowModal(true), 1000);
   }
+
+  const handleClick = close => {
+    document.getElementById('container').classList.remove('hidden');
+    document.getElementById('shuffle').hidden = false;
+    setTimeout(() => setShowModal(close), 1000);
+  };
 
   return (
     <>
@@ -35,7 +54,12 @@ const Tarot = () => {
         <section className={styles.tarot}>
           <h1>Tarot</h1>
           <p>Close your eyes and ask the oracle 🔮</p>
-          <button className="btn btn-small" onClick={shuffleCards} hidden={false} id="shuffle">shuffle</button>
+          <div className={styles.buttons}>
+            <button className="btn btn-small" onClick={shuffleCards} hidden={false} id="shuffle">shuffle</button>
+            <button className="btn btn-small" onClick={ready} id="ready" hidden={true}> i'm ready</button>
+         
+          </div>
+        
           <div className={styles.container} id="container">
 
             <div className={animation ? `${styles['animate1']}` : null}>
@@ -47,36 +71,21 @@ const Tarot = () => {
             </div>
 
           </div>
-
-          <div className={`${styles['deck']} ${['hidden']}`} id="deck" >
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-            <div className={styles.drag}>
-              <Card></Card>
-            </div>
-          </div>
-
-          <button className="btn btn-small" onClick={ready} id="ready" hidden={true}> i'm ready</button>
           
+          {showModal && <ModalTarot handleClick={handleClick} tarotCard={tarotCard} />}
+
           <small className={styles.small}>
+            <p>We must always bear in mind that the Archetype, in itself,
+            escapes representation, has no determined content – it is,
+            only, a virtuality, a potential; archaic matrix where
+            analogous or similar configurations take shape. The content
+            archetypal is expressed first and foremost in the form of metaphor.</p>
             this tarot follows the Petit LeNormand deck
             
           <Link href="https://en.wikipedia.org/wiki/Marie_Anne_Lenormand" target="_blank">
             <a> [wiki] </a>
           </Link>
+
           </small>
         </section>
       </main>
