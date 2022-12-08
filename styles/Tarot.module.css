@@ -191,4 +191,10 @@
   .result-container {
     max-width: 90vw;
   }
+  .small {
+    margin: 2rem 1rem;
+  }
+  .result .result-container {
+    margin: 5% auto 5% 1.5rem;
+  }
 }
