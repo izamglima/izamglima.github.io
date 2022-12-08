@@ -5,9 +5,9 @@ import styles from '../../styles/Kaleidoscope.module.css'
 
 const Kaleidoscope = () => {
   //let photo = 1;
-  const [photo, setPhoto] = useState(1)
+  const [photo, setPhoto] = useState(1);
   const [photosLength, setPhotosLength] = useState(0);
-  const path = 'https://izamglima.github.io/mysite-photos/'
+  const path = 'https://izamglima.github.io/mysite-photos/';
 
   useEffect(() => {
     fetch('/data/photos.json')

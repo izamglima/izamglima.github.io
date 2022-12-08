@@ -3,22 +3,22 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/Tarot.module.css'
 import Card from '../../components/Card';
-import ModalTarot from '../../components/ModalTarot';
+import ResultTarot from '../../components/ResultTarot';
 
 const Tarot = () => {
   const [animation, setAnimation] = useState(false);
   const [animation2, setAnimation2] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [tarotCard, setTarotCard] = useState(1);
+  const [showResult, setShowResult] = useState();
+  const [tarotCard, setTarotCard] = useState();
   const TOTAL = 36;
 
   useEffect(() => {
     fetch('/data/tarot.json')
     .then(res => res.json())
     .then(json => {
-      const rand = Math.floor(Math.random()*TOTAL)
-      // find in json the rand number
-      //setTarotCard(rand)
+      const rand = Math.floor(Math.random()*TOTAL);
+      const card = json.tarot.find(e => e.id == rand);
+      setTarotCard(card);
     })
   }, []);
 
@@ -28,21 +28,22 @@ const Tarot = () => {
 
     setTimeout(() => setAnimation(false), 3600);
     setTimeout(() => setAnimation2(false), 3600);
-
     document.getElementById('ready').hidden = false;
   }
 
   const ready = () => {
-    document.getElementById('ready').hidden = true;
-    document.getElementById('container').classList.add('hidden');
-    document.getElementById('shuffle').hidden = true;
-    setTimeout(() => setShowModal(true), 1000);
+    setShowResult(true);
+    document.getElementById('result').classList.remove('hidden');
+    document.getElementById('ready').hidden = true; //hide buttons
+    document.getElementById('shuffle').hidden = true; //hide buttons
+    document.getElementById('container').classList.add('hidden'); 
   }
 
   const handleClick = close => {
-    document.getElementById('container').classList.remove('hidden');
+    setShowResult(close);
+    document.getElementById('container').classList.remove('hidden');    
     document.getElementById('shuffle').hidden = false;
-    setTimeout(() => setShowModal(close), 1000);
+    document.getElementById('result').classList.add('hidden');
   };
 
   return (
@@ -72,7 +73,10 @@ const Tarot = () => {
 
           </div>
           
-          {showModal && <ModalTarot handleClick={handleClick} tarotCard={tarotCard} />}
+          <div className='hidden' id="result">
+            {tarotCard && showResult && <ResultTarot handleClick={handleClick} tarotCard={tarotCard} />}  
+          </div>
+           
 
           <small className={styles.small}>
             <p>We must always bear in mind that the Archetype, in itself,
