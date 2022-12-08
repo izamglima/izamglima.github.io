@@ -2,7 +2,7 @@ import styles from '../styles/Tarot.module.css'
 import Card from './Card';
 
 const ResultTarot = ({handleClick, tarotCard}) => {
-  const path = 'http://localhost:3000/tarot-cards/'
+  const path = 'https://izamglima.github.io/tarot-cards/'
   return (
     <div className={styles.result}> 
         <div className={styles['result-container']}>
