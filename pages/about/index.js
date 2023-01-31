@@ -34,7 +34,7 @@ const About = () => {
                   <div className={styles.bg}></div>
                   <div className={styles.avatar}></div>
                   <h2>Izabela Moreira Germer de Lima</h2>
-                  <p>Amstelveen, North Holland, Netherlands</p>
+                  <p>Amsterdam, North Holland, Netherlands</p>
               </div>
               <div className={styles.box}>
                   <h3>Resume</h3>
