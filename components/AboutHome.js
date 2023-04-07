@@ -6,24 +6,20 @@ const AboutHome = () => {
     <>
     <h2 className={styles.title}>About ...</h2>
     <div className={styles.about}>
-      <p>So what do you want to know?</p>
       <div>
-        <ul>
-          <li>
-            <Link href="/about">
-              <a>
-                <p>Carrer, education, works...</p>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about/more">
-              <a>
-                <p>My life, history, hobbies...</p>
-              </a>
-            </Link>
-          </li>
-        </ul>
+        <Link href="/about">
+          <a>
+            <p>Carrer, education, works</p>
+          </a>
+        </Link>
+      </div>
+      <span className={styles.divider}></span>
+      <div>
+        <Link href="/about/more">
+          <a>
+            <p>My life, history, hobbies</p>
+          </a>
+        </Link>
       </div>
     </div>
     </>

@@ -21,32 +21,21 @@ const More = () => {
             </p>
 
             <p>When someone asked me what I wanted to be when I grew up 
-              (I don't agree with that kind of question, especially made for children or teenagers, 
-              but the 90's were wild) I would answer something different each time. 
-              The answers ranged from being a cook to joining the merchant marine 
+              I would answer something different each time. 
+              The answers ranged from being a cook to joining the merchant marine !?
               (I have no idea where it came from). The truth is, I never really knew what to do, 
               until I tried different courses like law, social sciences, and then I was sure 
               I didn't want to. When I started to get more interested and learn about how 
-              computers work, how to write programs, the little pieces started to fall into 
-              place and I found myself satisfied to have this profession, to get excited when 
-              that approach to the solution works or get so focused to solve that bug that it 
-              gets in your head until you dream about it - and sometimes you find the solution 
-              in dreams.</p>
-
-            <p>In 2011 I meet my husband because of a friend that I studied together with. 
-              Since then we are living together.
-            </p>
-
-            <p>The first time I traveled abroad was in 2018. Before that I always traveled 
-              inside Brazil and South America. Part of that was due it's very expensive but 
-              also because in Brazil we have many different landscapes like mountains and beaches, 
-              also, the countryside is beautiful.
-            </p>
+              computers work, how to write programs, then I decided to graduate in System Development.
+              After some time working as frontend developer, I felt a desire to get more involved with the 
+              creative and artistic side, so I started to study drawings and paintings and I intend to study 
+              more and more. I still don't know where this is going to take me, but I have some 
+              projects in mind that I would like to put into practice in the future.</p>
           
-            <p>In 2019 we decided to move to the Netherlands, where my husband was already working 
+            <p>In 2019 me and my husband decided to move to the Netherlands, where he was already working 
               remotely as a software developer. The actual move happened during the lockdowns
-              in 2020. Luckily we had a small support network of friends who helped during this 
-              period. 💛
+              in 2020. Luckily we had a small support network of friends who have been helping during this intense,
+              full of highs and downs period. 💛
             </p>
 
             <p>Besides work / tech stuffs I like to listen to music and podcasts, spend time outside walking, 

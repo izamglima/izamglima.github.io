@@ -33,7 +33,7 @@ const Kaleidoscope = () => {
       <main className="main">
         <section className={styles.kaleidoscope}>
           <h1>Kaleidoscope</h1>
-          <p>because i like colors and shapes :)</p>
+          <p>because i like colors and shapes :) </p>
           <button className="btn btn-small" onClick={changeBg}>Change image</button>
           <div className={styles.container}>
             <div className={styles.kaleido}>
@@ -56,6 +56,7 @@ const Kaleidoscope = () => {
               </clipPath>
             </svg>
           </div>
+          <p>the images used are some pictures that i enjoyed taking </p>
           <small className={styles.small}>
             Coined by its Scottish inventor David Brewster, &quot;kaleidoscope&quot; is derived from the Ancient Greek word καλός <i>(kalos)</i>, &quot;beautiful, beauty&quot;, εἶδος <i>(eidos)</i>, &quot;that which is seen: form, shape&quot; and σκοπέω <i>(skopeō)</i>, &quot;to look to, to examine&quot;, hence &quot;observation of beautiful forms.&quot; 
           <Link href="https://en.wikipedia.org/wiki/Kaleidoscope" target="_blank">

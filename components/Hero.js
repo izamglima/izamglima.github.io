@@ -3,8 +3,9 @@ import styles from '../styles/Hero.module.css'
 const Hero = () => {
   return (
     <div className={styles['hero-background']}>
-      <h1 className={styles.developer}>Hi! My name is Izabela and I am a</h1>
-      <h2 className={styles.developer}>frontend developer</h2>
+      <h1 className={styles.developer}>Hello there, welcome</h1>
+      <h2 className={styles.developer}>My name is Izabela de Lima</h2>
+      <h3 className={styles.developer}>this is my small project, enjoy!</h3>
       <div className={styles.sun}></div>
       <div className={styles.moon}></div>
       
