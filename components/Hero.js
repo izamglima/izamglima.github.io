@@ -5,7 +5,7 @@ const Hero = () => {
     <div className={styles['hero-background']}>
       <h1 className={styles.developer}>Hello there, welcome</h1>
       <h2 className={styles.developer}>My name is Izabela de Lima</h2>
-      <h3 className={styles.developer}>this is my small project, enjoy!</h3>
+      <p className={styles.developer}>this is my small project, enjoy!</p>
       <div className={styles.sun}></div>
       <div className={styles.moon}></div>
       
