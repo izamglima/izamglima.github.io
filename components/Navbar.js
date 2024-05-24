@@ -50,7 +50,7 @@ const Navbar = () => {
         </button>
         <div className={`${["navbar__menu--toggle"]}`}>
           <Link href="/"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>Home</a></Link>
-          <Link href="/about"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>About</a></Link>
+          {/* <Link href="/about"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>About</a></Link> */}
           <Link href="/projects"><a className="navbar__links--link" onClick={() => {closeMenu(); play();}}>Projects</a></Link>
         </div>
       </div>

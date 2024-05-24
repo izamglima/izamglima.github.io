@@ -9,9 +9,9 @@ const SectionsHome = () => {
       <section className={styles.main__parallax}>
         <Hero />
       </section>
-      <section className={styles.main__about}>
+      {/* <section className={styles.main__about}>
         <AboutHome />
-      </section>
+      </section> */}
       <section className={styles.main__projects}>
         <ProjectsHome />
         <p className='text-center'>...and more to be created!</p>
